@@ -17,25 +17,106 @@
     <!-- Main Body UI -->
     <div>
         <!-- First Page Load -->
-        <section></section>
+        <section>
+            <h1> Historic Center Quiz </h1>
+
+            <div>
+                <button id="instruct" aria-label="Read the Instruction">Instructions</button>
+                <br>
+                <button id="enterName" aria-label="Press to Play">Enter Name</button>
+            </div>
+        </section>
 
         <!-- Instruction Display -->
-        <section></section>
+        <section>
+            <div>
+                <h1>How To Play:</h1>
+                <ul>
+                    <li>You have 120 seconds to answer test your knowledge.</li>
+                    <li>Each picture represents an historic center around the world.</li>
+                    <li>Click on your selected answer.</li>
+                    <li>A green color on the button indicates you choosed the right answer
+                    <li>A red color indicates you have chosen the wrong answer.</li>
+                </ul>
+                <button id="backFromInstruct" aria-label="Exit the Instruction Page">Home</button>
+            </div>
+        </section>
 
         <!-- Name Input Area -->
-        <section></section>
+        <section>
+            <h1> Historic Center Quiz </h1>
+
+            <input id="nameValue" type="text" placeholder="Enter Your Name" aria-label="Enter your name" required>
+            <br>
+            <button id="submit" aria-label="Submit button">Submit</button>
+        </section>
 
         <!-- Welcome Page -->
-        <section></section>
+        <section>
+            <h2 id="welcomePage">Welcome <span id="playerName"></span>,<br> Can you identify these locations?</h2>
+            <p>Find out how much of the world historic centers you know.</p>
+
+            <button aria-label="Start Game">Start Game</button>
+        </section>
 
         <!-- Game Area -->
-        <section></section>
+        <section>
+            <img>
+            <div id="optionCount">
+                <div>
+                    <!-- Expression to show Question Count-->
+                    <div id="ansQues">Question<span id="questionNum">0</span>/10</div>
+                    <!-- Progress Bar for CorrectAns-->
+                    <div class="progress">
+                        <div class="boxes">
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div class="progress-inner"></div>
+                </div>
+                <!-- Available options -->
+                <p id="option1" aria-label="Option 1">Option1</p>
+                <p id="option2" aria-label="Option 2">Option2</p>
+                <p id="option3" aria-label="Option 3">Option3</p>
+                <p id="option4" aria-label="Option 4">Option4</p> 
+            </div>
+            
+           <div id="recordArea">
+               <!-- Correct Answer count -->
+               <div id="points" class="circle">0</div>
+                <p>Correct</p>
+
+                <!-- Time Left for the Game-->
+                <div id="time"></div>
+                
+                <!-- Correct Answer count -->
+                <div id="wrong" class="circle">0</div>
+                <p>Missed</p>
+            </div>
+        </section>
     </div>
 
     <!-- End Game Page -->
     <section>
-
+        <!-- This page shows up when timeCount is out or when 10 questions have been answered -->
+        <div>
+            <h1>Historic Center Quiz</h1>
+            <p class="endMessage">You answered <span id="rightAns">0</span> questions right</p>
+            <p class="endMessage">Your score is <span id="totalScore">10</span>/ 100</p>
+            <br>
+            <button id="restart">Start Over</button>
+        </div>
     </section>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
