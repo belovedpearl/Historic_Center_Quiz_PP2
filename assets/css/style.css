@@ -71,6 +71,13 @@ input{
     transform: translate(2px);
 }
 
+/*___ Style the endPage Text*/
+.endMessage{
+    color: black;
+    font-size: 150%;
+    font-style: oblique;
+}
+
 /*___ Style all section on the page ___*/
 #firstPage,
 #nameArea,
@@ -117,9 +124,55 @@ input{
     transform: scale(1.5);
 }
 
-.endMessage{
-    color: black;
-    font-size: 150%;
-    font-style: oblique;
+/*___ Style the Game Area ___*/
+
+#game{
+    width: 800px;
+    min-height: 550px;
+    border: 2px solid black;
+    border-radius: 20px;
 }
+
+#gameHead{
+  width: 100%;
+  height: 10%;
+  padding: 0;
+  margin: 0;
+}
+
+#gameBody{
+    height: 478px;
+    display: flex;
+}
+
+#questionImage{
+    width: 60%;
+    min-height: 100%;
+    border-radius: 0 20px 20px 10px;
+}
+
+#optionCount{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.option{
+    display: block;
+    width: 95%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#ansQues{
+    font-size: 120%;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
 
