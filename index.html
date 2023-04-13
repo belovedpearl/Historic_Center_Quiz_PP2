@@ -17,7 +17,7 @@
     <!-- Main Body UI -->
     <div>
         <!-- First Page Load -->
-        <section>
+        <section id="firstPage">
             <h1> Historic Center Quiz </h1>
 
             <div>
@@ -28,7 +28,7 @@
         </section>
 
         <!-- Instruction Display -->
-        <section>
+        <section id="howTo">
             <header>
                 <h1><i class="fa-solid fa-earth-americas"></i>Explore</h1>
             </header>
@@ -46,7 +46,7 @@
         </section>
 
         <!-- Name Input Area -->
-        <section>
+        <section id="nameArea">
             <h1> Historic Center Quiz </h1>
 
             <input id="nameValue" type="text" placeholder="Enter Your Name" aria-label="Enter your name" required>
@@ -55,7 +55,7 @@
         </section>
 
         <!-- Welcome Page -->
-        <section>
+        <section id="welcome">
             <h2 id="welcomePage">Welcome <span id="playerName"></span>,<br> Can you identify these locations?</h2>
             <p>Find out how much of the world historic centers you know.</p>
 
@@ -63,7 +63,7 @@
         </section>
 
         <!-- Game Area -->
-        <section>
+        <section id="game">
             <header>
                 <h1><i class="fa-solid fa-earth-americas"></i>Explore</h1>
             </header>
@@ -112,7 +112,7 @@
     </div>
 
     <!-- End Game Page -->
-    <section>
+    <section id="endPage">
         <!-- This page shows up when timeCount is out or when 10 questions have been answered -->
         <div>
             <h1>Historic Center Quiz</h1>
@@ -125,7 +125,7 @@
     <script src="https://kit.fontawesome.com/68d4741fb5.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     <noscript>
-        <div>
+        <div id="noScript">
             <img alt="Game Image Representation">
             <p>Oh!!! You need Javascript to Play this Game</p>
             <p>You have to get or enable Javascript to access it.</p>
