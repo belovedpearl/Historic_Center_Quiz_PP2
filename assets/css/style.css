@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-/* General */
+/*____ GENERAL ____*/
 body{
     background: linear-gradient(138deg, rgb(32,201, 255) 36.7%, rgb(52, 79, 88) 84.4%, rgb(255, 255, 255) 119.7%);
     font-family: 'Andika', sans-serif;
@@ -35,18 +35,23 @@ li{
     list-style: none;
 }
 
+p{
+    font-size: 140%;
+    margin-bottom: 35px;
+}
+
 input{
     width: 400px;
     height: 40px;
     font-size: 150%;
     font-weight: 700;
     border-radius: 15px;
-    margin: auto;
-    
+    margin: auto;    
 }
 
 /*____ CLASS STYLES ___*/
 
+/*___ Style button on each page and iys behavior when pressed ___*/
 .btn{
     margin: 5px;
     width: 150px;
@@ -65,6 +70,8 @@ input{
     box-shadow: 0 3px rgb(255, 255, 255);
     transform: translate(2px);
 }
+
+/*___ Style all section on the page ___*/
 #firstPage,
 #nameArea,
 #welcome,
@@ -78,7 +85,18 @@ input{
 }
 
 
+/*___ Style Applied to Logo ___*/
 #logo{
     padding: 0;
+}
+
+/*___ Style the welcome page header and username ___*/
+#welcomePage{
+    font-size: 150%;
+    margin: 50px;
+}
+
+#playerName{
+    color: white;
 }
 
