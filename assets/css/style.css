@@ -9,10 +9,14 @@ body{
     background: linear-gradient(138deg, rgb(32,201, 255) 36.7%, rgb(52, 79, 88) 84.4%, rgb(255, 255, 255) 119.7%);
     font-family: 'Andika', sans-serif;
     text-align: center;
-    display: flex;
+     
+}
+#mainUI{
+    display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    
 }
 
 h1{
@@ -237,4 +241,37 @@ input{
 /*____ Added to hide some sections ___*/
 .hide{
     display: none;
+}
+
+/*___________ Responsiveness on Smaller Screens _________________*/
+
+@media screen and (max-width: 800px) {
+    
+    #game{
+        width: 600px;
+        min-height: 550px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #firstPage,
+    #nameArea,
+    #welcome,
+    #howTo,
+    #noScript{
+        width: 95%;
+    }
+    h1{
+        font-size: 150%;
+        padding: 0;
+        margin: 80px;
+    }
+    input{
+        width: 90%;
+    }
+    #game{
+        width: 300px;
+        min-height: 450px;
+    }
+    
 }
