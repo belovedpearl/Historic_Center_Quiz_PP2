@@ -51,7 +51,7 @@ input{
 
 /*____ CLASS STYLES ___*/
 
-/*___ Style button on each page and iys behavior when pressed ___*/
+/*___ Style button on each page and its behavior when pressed ___*/
 .btn{
     margin: 5px;
     width: 150px;
@@ -164,6 +164,7 @@ input{
     height: 40px;
     margin: 20px;
     border-radius: 15px;
+    font-weight: 700;
 }
 
 #ansQues{
@@ -233,4 +234,7 @@ input{
     font-size: 150%;
 }
 
-
+/*____ Added to hide some sections ___*/
+.hide{
+    display: none;
+}
