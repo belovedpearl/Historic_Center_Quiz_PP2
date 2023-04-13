@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* General */
+body{
+    background: linear-gradient(138deg, rgb(32,201, 255) 36.7%, rgb(52, 79, 88) 84.4%, rgb(255, 255, 255) 119.7%);
+    font-family: 'Andika', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
