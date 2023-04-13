@@ -100,3 +100,20 @@ input{
     color: white;
 }
 
+/*___ Syle the endPage ___*/
+#endPage{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s ease-out;
+    transform: scale(1.5);
+}
+
