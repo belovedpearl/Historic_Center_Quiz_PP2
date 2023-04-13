@@ -12,4 +12,44 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;  
+}
+
+#firstPage,
+#nameArea,
+#welcome,
+#howTo,
+#noScript{
+    width: 600px;
+    min-height: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+}
+h1{
+    font-size: 250%;
+    padding: 40px;
+}
+
+.btn{
+    margin: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 120%;
+    border-radius: 15px;
+    font-weight: 900;
+}
+
+.btn:hover{
+    background-color: rgb(52, 79, 88);
+    color: rgb(255, 255, 255);
+}
+.btn:active{
+    background-color: rgb(32,201, 255);
+    box-shadow: 0 3px rgb(255, 255, 255);
+    transform: translate(2px);
 }
