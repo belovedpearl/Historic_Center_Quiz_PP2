@@ -100,7 +100,7 @@ input{
     color: white;
 }
 
-/*___ Syle the endPage ___*/
+/*___ Style the endPage ___*/
 #endPage{
     position: fixed;
     top: 0;
@@ -115,5 +115,11 @@ input{
     visibility: hidden;
     transition: all .35s ease-out;
     transform: scale(1.5);
+}
+
+.endMessage{
+    color: black;
+    font-size: 150%;
+    font-style: oblique;
 }
 
