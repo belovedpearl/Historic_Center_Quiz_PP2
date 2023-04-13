@@ -15,25 +15,37 @@ body{
     align-items: center;  
 }
 
-#firstPage,
-#nameArea,
-#welcome,
-#howTo,
-#noScript{
-    width: 600px;
-    min-height: 450px;
-    border: 2px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 50px;
-}
 h1{
     font-size: 250%;
     padding: 40px;
+    margin: 50px;
 }
+
+h2{
+    font-size: 100%;
+    margin: 10px;
+}
+
+ul{
+    margin-bottom: 20px;
+}
+
+li{
+    font-weight: 400;
+    list-style: none;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    font-size: 150%;
+    font-weight: 700;
+    border-radius: 15px;
+    margin: auto;
+    
+}
+
+/*____ CLASS STYLES ___*/
 
 .btn{
     margin: 5px;
@@ -53,3 +65,20 @@ h1{
     box-shadow: 0 3px rgb(255, 255, 255);
     transform: translate(2px);
 }
+#firstPage,
+#nameArea,
+#welcome,
+#howTo,
+#noScript{
+    width: 600px;
+    min-height: 450px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+
+#logo{
+    padding: 0;
+}
+
