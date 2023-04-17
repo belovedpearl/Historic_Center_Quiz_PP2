@@ -69,30 +69,30 @@
         <!-- Game Area -->
         <section id="game">
             
-            <div id="gameBody">
-                <img src="assets/quizImage/quizImages/acropolis-athens.webp" alt="Game Image to be identified" id="questionImage">
-                <div id="optionCount">
-                    <div>
-                        <!-- Expression to show Question Count-->
-                        <div id="ansQues">Question <span id="questionNum">0</span>/10</div>
-                        <!-- Progress Bar for CorrectAns-->
-                        <div id="progress">
-                            <div id="boxes">
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-                            </div>
-                        </div>
-                    <div id="progress-inner"></div>
+            <div id="questionCount">
+                <!-- Expression to show Question Count-->
+                <div id="ansQues">Question <span id="questionNum">0</span>/10</div>
+                <!-- Progress Bar for CorrectAns-->
+                <div id="progress">
+                    <div id="boxes">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
                 </div>
-                <div>
+                <div id="progress-inner"></div>
+            </div>
+            <div id="questionOption">
+                <img src="assets/quizImage/quizImages/acropolis-athens.webp" alt="Game Image to be identified" id="questionImage">
+
+                <div id="options">
                     <!-- Available options -->
                     <button class="option" id="option1" aria-label="Option 1">Option1</button>
                     <button class="option" id="option2" aria-label="Option 2">Option2</button>
@@ -100,10 +100,9 @@
                     <button class="option" id="option4" aria-label="Option 4">Option4</button> 
                 </div>
             </div>
-            
            <div id="recordArea">
                <!-- Correct Answer count -->
-               <div>
+               <div class="scoreCount">
                    <div id="points" class="circle">0</div>
                    <p>Correct</p>
                </div>
@@ -111,7 +110,7 @@
                 <div id="time"><i class="fa-solid fa-stopwatch-20"></i>X</div>
                 
                 <!-- Correct Answer count -->
-                <div>
+                <div class="scoreCount">
                     <div id="wrong" class="circle">0</div>
                     <p>Missed</p>
                 </div>    
