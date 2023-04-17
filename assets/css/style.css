@@ -82,6 +82,12 @@ input{
     font-style: oblique;
 }
 
+/*____ Style the theme on the first Page ____*/
+#theme{
+    margin: 5px;
+    font-size: 120%;
+}
+
 /*___ Style all section on the page ___*/
 #firstPage,
 #nameArea,
