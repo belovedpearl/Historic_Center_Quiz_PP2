@@ -142,6 +142,11 @@ input{
     min-height: 450px;
     border: 2px solid black;
     border-radius: 20px;
+    
+}
+#gameBody{
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }

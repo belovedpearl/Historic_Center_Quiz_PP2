@@ -32,7 +32,7 @@
         </section>
 
         <!-- Instruction Display -->
-        <section id="howTo">
+        <section id="howTo" class="hide">
             <header>
                 <h1 id="logo"><i class="fa-solid fa-earth-americas"></i>Explore</h1>
             </header>
@@ -50,7 +50,7 @@
         </section>
 
         <!-- Name Input Area -->
-        <section id="nameArea">
+        <section id="nameArea" class="hide">
             <h1> Historic Center Quiz </h1>
 
             <input id="nameValue" type="text" placeholder="Enter Your Name" aria-label="Enter your name" required>
@@ -59,7 +59,7 @@
         </section>
 
         <!-- Welcome Page -->
-        <section id="welcome">
+        <section id="welcome" class="hide">
             <h2 id="welcomePage">Welcome <span id="playerName"></span>,<br> Can you identify these locations?</h2>
             <p>Find out how much of the world historic centers you know.</p>
 
@@ -67,55 +67,57 @@
         </section>
 
         <!-- Game Area -->
-        <section id="game">
+        <section id="game" class="hide">
+
+            <div id="gameBody">
             
-            <div id="questionCount">
-                <!-- Expression to show Question Count-->
-                <div id="ansQues">Question <span id="questionNum">0</span>/10</div>
-                <!-- Progress Bar for CorrectAns-->
-                <div id="progress">
-                    <div id="boxes">
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
+                 <div id="questionCount">
+                    <!-- Expression to show Question Count-->
+                    <div id="ansQues">Question <span id="questionNum">0</span>/10</div>
+                    <!-- Progress Bar for CorrectAns-->
+                    <div id="progress">
+                        <div id="boxes">
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                    <div id="progress-inner"></div>
+                </div>
+                <div id="questionOption">
+                    <img src="assets/quizImage/quizImages/acropolis-athens.webp" alt="Game Image to be identified" id="questionImage">
+
+                    <div id="options">
+                        <!-- Available options -->
+                        <button class="option" id="option1" aria-label="Option 1">Option1</button>
+                        <button class="option" id="option2" aria-label="Option 2">Option2</button>
+                        <button class="option" id="option3" aria-label="Option 3">Option3</button>
+                        <button class="option" id="option4" aria-label="Option 4">Option4</button> 
                     </div>
                 </div>
-                <div id="progress-inner"></div>
-            </div>
-            <div id="questionOption">
-                <img src="assets/quizImage/quizImages/acropolis-athens.webp" alt="Game Image to be identified" id="questionImage">
-
-                <div id="options">
-                    <!-- Available options -->
-                    <button class="option" id="option1" aria-label="Option 1">Option1</button>
-                    <button class="option" id="option2" aria-label="Option 2">Option2</button>
-                    <button class="option" id="option3" aria-label="Option 3">Option3</button>
-                    <button class="option" id="option4" aria-label="Option 4">Option4</button> 
+                <div id="recordArea">
+                   <!-- Correct Answer count -->
+                   <div class="scoreCount">
+                       <div id="points" class="circle">0</div>
+                       <p>Correct</p>
+                   </div>
+                     <!-- Time Left for the Game-->
+                   <div id="time"><i class="fa-solid fa-stopwatch-20"></i>X</div>
+                
+                    <!-- Correct Answer count -->
+                   <div class="scoreCount">
+                        <div id="wrong" class="circle">0</div>
+                        <p>Missed</p>
+                   </div>    
                 </div>
             </div>
-           <div id="recordArea">
-               <!-- Correct Answer count -->
-               <div class="scoreCount">
-                   <div id="points" class="circle">0</div>
-                   <p>Correct</p>
-               </div>
-                <!-- Time Left for the Game-->
-                <div id="time"><i class="fa-solid fa-stopwatch-20"></i>X</div>
-                
-                <!-- Correct Answer count -->
-                <div class="scoreCount">
-                    <div id="wrong" class="circle">0</div>
-                    <p>Missed</p>
-                </div>    
-            </div>
-            
         </section>
     </div>
 
