@@ -192,3 +192,17 @@ function runGame(){
     }
     
 }
+
+
+
+/**
+ * Resets the state of the question box
+ */
+function resetOptions(){
+    let choices = document.getElementsByClassName("choice");
+    for (let choice of choices){
+        choice.disabled = false;
+        choice.classList.remove("correct");
+        choice.classList.remove("wrong");
+    }
+}
