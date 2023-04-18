@@ -98,6 +98,9 @@ let questions = [
 ];
 
 
+// Declare variables
+let currentQuestion = null;
+let questioncounter = 0;
 
 // after the document is loaded, add event listeners to all the required areas
 
