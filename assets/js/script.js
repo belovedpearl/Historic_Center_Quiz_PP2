@@ -96,3 +96,53 @@ let questions = [
     },
     
 ];
+
+
+
+// after the document is loaded, add event listeners to all the required areas
+
+document.addEventListener("DOMContentLoaded", function(){
+    let instruct = document.getElementById("instruct");
+    instruct.addEventListener("click", function(){
+    document.getElementById("firstPage").classList.add("hide"); 
+    document.getElementById("howTo").classList.remove("hide");
+    })
+    let nameArea = document.getElementById("enterName");
+    nameArea.addEventListener("click", function(){
+        document.getElementById("firstPage").classList.add("hide"); 
+        document.getElementById("nameArea").classList.remove("hide"); 
+    })
+    let back = document.getElementById("backFromInstruct");
+    back.addEventListener("click", function(){
+        document.getElementById("firstPage").classList.remove("hide"); 
+        document.getElementById("howTo").classList.add("hide"); 
+    })
+    
+    let submit = document.getElementById("submit");
+    submit.addEventListener("click", function(){
+        let name = document.getElementById("nameValue").value;
+        document.getElementById("nameArea").classList.add("hide");
+         let welcomePage = document.getElementById("welcome");
+         welcomePage.classList.remove("hide");
+        welcome(name) 
+    })
+
+    let startGame = document.getElementById("gameStart");
+    startGame.addEventListener("click", function(){
+        let gameStartArea = document.getElementById("game");
+    gameStartArea.classList.remove("hide");
+     let welcomePage = document.getElementById("welcome");
+     welcomePage.classList.add("hide");
+
+     runGame()
+     countdown()
+    })
+    
+    
+})
+
+function welcome(name){
+    console.log(name)
+    let playerName = document.getElementById("playerName");
+    playerName.innerText = name
+}
