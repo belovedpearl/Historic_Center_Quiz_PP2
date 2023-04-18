@@ -65,38 +65,32 @@ let questions = [
         answer: "Machu Picchu Peru"
     },
     {
-        question: "assets/images/quizImages/machu-picchu.webp",
-        options: ["Machu Picchu Peru","Ankor Wat Cambodia","Bayon Temple-Paris","Cerro Machu Picchu"],
-        answer: "Machu Picchu Peru"
-    },
-
-    {
-        question: "assets/images/quizImage/mount-rushmore.webp",
+        question: "assets/images/quizImages/mount-rushmore.webp",
         options: ["Mount Argus Dublin","Mount Ararat Turkey","Mount Rushmore United States","Mount Arbet Isreal"],
         answer: "Mount Rushmore United States"
     },
     {
-        question: "assets/images/quizImage/petra.webp",
+        question: "assets/images/quizImages/petra.webp",
         options: ["Ankor ","Acropolis Athens","Petra Jordan","Taj Mahal"],
         answer: "Petra Jordan"
     },
     {
-        question: "assets/images/quizImage/pyramid-of-kukulkan",
+        question: "assets/images/quizImages/pyramid-of-kukulkan",
         options: ["Pyramid of Tiza Mexico","Pyramid of Kukulkan","Pyramid of Giza","Pyramid of Cholula Mexico"],
         answer: "Pyramid of Kukulkan"
     },
     {
-        question: "assets/images/quizImage/stonehenge-england.webp",
+        question: "assets/images/quizImages/stonehenge-england.webp",
         options: ["Stone Henge England","Avebury England","Woodhenge England","Stone Henge Nebraska"],
         answer: "Stone Henge England"
     },
     {
-        question: "assets/images/quizImage/taj-mahal.webp",
+        question: "assets/images/quizImages/taj-mahal.webp",
         options: ["Petra Jordan","Shah Jahan Paris","Taj Mahal India","Ankor Wat"],
         answer: "Taj Mahal India"
     },
     {
-        question: "assets/images/quizImage/westminster-palace.webp",
+        question: "assets/images/quizImages/westminster-palace.webp",
         options: ["Kensington Palace London","Central White Hall Palace","Westminster Palace London","Buckingham Palace"],
         answer: "Westminster Palace London"
     },
