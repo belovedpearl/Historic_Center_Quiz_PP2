@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function(){
     gameStartArea.classList.remove("hide");
      let welcomePage = document.getElementById("welcome");
      welcomePage.classList.add("hide");
-     
+
      // call functions to continue running the game
      runGame()
      countdown()
@@ -155,4 +155,37 @@ function welcome(name){
     console.log(name)
     let playerName = document.getElementById("playerName");
     playerName.innerText = name
+}
+
+
+/**
+ * Gets a random question
+ * Sets it on display to the user
+ */
+function runGame(){
+    resetOptions()
+    let questionNumber = document.getElementById("questionNum");
+    questionNumber.innerText = questioncounter++;
+   //console.log(questioncounter)
+    if (questioncounter > 10){
+        stopGame()
+        }else if(questioncounter <= 10){
+        const questionIndex = Math.floor(Math.random() * 5);
+        currentQuestion = questions[questionIndex];
+
+        let image = document.getElementById("questionImage");
+        image.src = currentQuestion.question;
+        
+        let choice1 = document.getElementById("option1");
+        choice1.innerText = currentQuestion.options[0];
+        let choice2 = document.getElementById("option2");
+        choice2.innerText = currentQuestion.options[1];
+        let choice3 = document.getElementById("option3");
+        choice3.innerText = currentQuestion.options[2];
+        let choice4 = document.getElementById("option4");
+        choice4.innerText = currentQuestion.options[3];
+        // Splice is used to remove the current question from the available questions to avoid repetition of questions
+        questions.splice(questionIndex, 1) 
+    }
+    
 }
