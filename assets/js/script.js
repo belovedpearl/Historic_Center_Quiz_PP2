@@ -102,22 +102,25 @@ let questions = [
 // after the document is loaded, add event listeners to all the required areas
 
 document.addEventListener("DOMContentLoaded", function(){
+    // To access the game instruction, hide the firstpage and show the second one
     let instruct = document.getElementById("instruct");
     instruct.addEventListener("click", function(){
     document.getElementById("firstPage").classList.add("hide"); 
     document.getElementById("howTo").classList.remove("hide");
     })
+    // To access the name area, hide the current page and show the next one
     let nameArea = document.getElementById("enterName");
     nameArea.addEventListener("click", function(){
         document.getElementById("firstPage").classList.add("hide"); 
         document.getElementById("nameArea").classList.remove("hide"); 
     })
+    // To go back to the firstpage
     let back = document.getElementById("backFromInstruct");
     back.addEventListener("click", function(){
         document.getElementById("firstPage").classList.remove("hide"); 
         document.getElementById("howTo").classList.add("hide"); 
     })
-    
+    // To submit name value to access the game
     let submit = document.getElementById("submit");
     submit.addEventListener("click", function(){
         let name = document.getElementById("nameValue").value;
@@ -126,14 +129,16 @@ document.addEventListener("DOMContentLoaded", function(){
          welcomePage.classList.remove("hide");
         welcome(name) 
     })
-
+    
+     // To access the main game area
     let startGame = document.getElementById("gameStart");
     startGame.addEventListener("click", function(){
         let gameStartArea = document.getElementById("game");
     gameStartArea.classList.remove("hide");
      let welcomePage = document.getElementById("welcome");
      welcomePage.classList.add("hide");
-
+     
+     // call functions to continue running the game
      runGame()
      countdown()
     })
@@ -141,6 +146,11 @@ document.addEventListener("DOMContentLoaded", function(){
     
 })
 
+
+/**
+ * Capture the username in a welcome greeting
+ * Takes its value from the input given in the page before
+ */
 function welcome(name){
     console.log(name)
     let playerName = document.getElementById("playerName");
