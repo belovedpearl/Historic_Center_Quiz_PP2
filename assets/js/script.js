@@ -193,16 +193,31 @@ function runGame(){
     
 }
 
-
-
+/**
+ *  Count down to the required time
+ * At endtime; calls the function to end the game
+ */
+function countdown(){
+    let counter = 60;
+     setInterval(()=>{
+     let time = document.getElementById("time");
+     time.innerText = counter--;
+      if(counter === 0){
+          time.innerText = "Time Up!!!"
+          stopGame()
+      }
+     }, 1000)
+     
+  }
+ 
 /**
  * Resets the state of the question box
  */
 function resetOptions(){
-    let choices = document.getElementsByClassName("choice");
-    for (let choice of choices){
-        choice.disabled = false;
-        choice.classList.remove("correct");
-        choice.classList.remove("wrong");
+    let options = document.getElementsByClassName("option");
+    for (let option of options){
+        option.disabled = false;
+        option.classList.remove("correct");
+        option.classList.remove("wrong");
     }
 }
