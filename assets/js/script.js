@@ -209,6 +209,26 @@ function countdown(){
      }, 1000)
      
   }
+
+
+  let options = document.getElementsByClassName("option")
+for (let option of options){
+    option.addEventListener("click", e => {
+        let selectAns = e.target;
+        console.log(selectAns);
+        if (selectAns.innerText === currentQuestion.answer){
+            option.classList.add("correct"); 
+        increaseScore()
+        progressBar()
+        
+        }else{
+            option.classList.add("wrong")
+            increaseWrong()
+    } 
+     disableClick();
+        setTimeout(runGame, 1000);
+})}
+
  
 /**
  * Resets the state of the question box
