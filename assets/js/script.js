@@ -210,7 +210,10 @@ function countdown(){
      
   }
 
-
+// Check the options buttons with their class name for a click
+// Add the class correct, increase score and add to the progress bar if selected one is correct
+// Add the class wrong, increase wrong if selected one is wrong
+// Disable the button after the first click
   let options = document.getElementsByClassName("option")
 for (let option of options){
     option.addEventListener("click", e => {
@@ -218,8 +221,8 @@ for (let option of options){
         console.log(selectAns);
         if (selectAns.innerText === currentQuestion.answer){
             option.classList.add("correct"); 
-        increaseScore()
-        progressBar()
+            increaseScore()
+            progressBar()
         
         }else{
             option.classList.add("wrong")
@@ -228,6 +231,23 @@ for (let option of options){
      disableClick();
         setTimeout(runGame, 1000);
 })}
+
+
+/**
+ * Get current score from the DOM and increase it by 1
+ */
+ function increaseScore(){
+    let score = document.getElementById("points").innerText;
+    document.getElementById('points').innerText = ++score;
+}
+
+/**
+ * Get current count from the DOM and increase it by 1
+ */
+ function increaseWrong(){
+    let wrong = document.getElementById("wrong").innerText;
+    document.getElementById('wrong').innerText = ++wrong;
+}
 
  
 /**
