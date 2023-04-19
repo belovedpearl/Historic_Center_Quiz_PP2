@@ -141,6 +141,10 @@ document.addEventListener("DOMContentLoaded", function(){
      let welcomePage = document.getElementById("welcome");
      welcomePage.classList.add("hide");
 
+     //To return back to the start game listen for
+     let reStart = document.getElementById("restart")
+     reStart.addEventListener("click", startOver)
+
      // call functions to continue running the game
      runGame()
      countdown()
@@ -281,3 +285,29 @@ function resetOptions(){
         option.classList.remove("wrong");
     }
 }
+
+/**
+ * Regulate progress bar increase as more right answer are provided
+ */
+
+function progressBar(){
+    let score = document.getElementById("points").innerText;
+    
+    let progressBar = document.querySelector(".progress-inner");
+    progressBar.style.transform = `scaleX(${score/10})`
+ }
+
+
+ /**
+  * Takes the game back to the geginning for use by another user
+  */
+
+  function startOver(){
+    document.body.classList.remove("overlay");
+    questioncounter = 0;
+    let score = document.getElementById("points").innerText;
+    score.innerText = 0;
+    let wrong = document.getElementById("wrong").innerText;
+    wrong.innerText = 0;
+    window.location.reload()
+ }
