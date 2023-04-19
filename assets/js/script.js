@@ -236,6 +236,18 @@ for (let option of options){
         setTimeout(runGame, 1000);
 })}
 
+/**
+ * Disable further clicks on answer buttons 
+ */
+
+function disableClick(){
+    let options = document.getElementsByClassName("option");
+    console.log(options)
+    for (let option of options){
+        option.disabled = true;
+    }
+}
+
 
 /**
  * Get current score from the DOM and increase it by 1
@@ -299,7 +311,7 @@ function progressBar(){
 
 
  /**
-  * Takes the game back to the geginning for use by another user
+  * Takes the game back to the beginning for use by another user
   */
 
   function startOver(){
