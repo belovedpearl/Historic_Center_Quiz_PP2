@@ -256,7 +256,17 @@ input{
 
 /*____ Added to hide some sections ___*/
 .hide{
-    display: none;
+    display: none !important;
+}
+
+/*____ Added to highlight right and wrong answers ____*/
+.correct{
+    background-color: green;
+    color: white;
+}
+
+.wrong{
+    background-color: red;
 }
 
 /*___________ Responsiveness on Smaller Screens _________________*/

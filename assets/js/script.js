@@ -249,6 +249,27 @@ for (let option of options){
     document.getElementById('wrong').innerText = ++wrong;
 }
 
+/**
+ * Stops the game
+ * Brings up the hidden section
+ * Set the score and right answer in the string
+ */
+ function stopGame(){
+    setTimeout(function (){
+        let restart = document.getElementById("restart");
+        restart.focus()
+    }, 360)
+
+ document.body.classList.add("overlay")
+ let score = document.getElementById("points").innerText;
+ let wrong = document.getElementById("wrong").innerText;
+ let rightAns = document.getElementById("rightAns");
+    rightAns.innerText = score;
+ let totalScore = document.getElementById("totalScore");
+    totalScore.innerText = score * 10;
+
+} 
+
  
 /**
  * Resets the state of the question box
