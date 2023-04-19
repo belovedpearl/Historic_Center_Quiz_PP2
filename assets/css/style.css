@@ -123,7 +123,7 @@ body.overlay > #endPage{
     visibility: visible;
     transform: scale(1);
 }
-body.overlay #main-ui{
+body.overlay #mainUI{
     filter: blur(4px);
 }
 

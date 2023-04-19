@@ -102,6 +102,7 @@ let questions = [
 let currentQuestion = null;
 let questioncounter = 0;
 
+
 // after the document is loaded, add event listeners to all the required areas
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -278,7 +279,10 @@ function disableClick(){
 
  document.body.classList.add("overlay")
  let score = document.getElementById("points").innerText;
- let wrong = document.getElementById("wrong").innerText;
+ let name = document.getElementById("nameValue").value;
+ //let wrong = document.getElementById("wrong").innerText;
+ let userName = document.getElementById("username")
+    userName.innerText = name
  let rightAns = document.getElementById("rightAns");
     rightAns.innerText = score;
  let totalScore = document.getElementById("totalScore");
