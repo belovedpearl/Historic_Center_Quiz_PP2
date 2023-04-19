@@ -143,6 +143,11 @@ body.overlay #main-ui{
     transform: scale(1.5);
 }
 
+.endMessage{
+    color: black;
+    font-size: 150%;
+    font-style: oblique;
+}
 /*___ Style the Game Area ___*/
 
 #game{
