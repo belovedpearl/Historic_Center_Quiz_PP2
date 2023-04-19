@@ -118,6 +118,15 @@ input{
 }
 
 /*___ Style the endPage ___*/
+body.overlay > #endPage{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+body.overlay #main-ui{
+    filter: blur(4px);
+}
+
 #endPage{
     position: fixed;
     top: 0;
