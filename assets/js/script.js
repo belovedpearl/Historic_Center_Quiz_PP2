@@ -267,7 +267,6 @@ for (let option of options){
     rightAns.innerText = score;
  let totalScore = document.getElementById("totalScore");
     totalScore.innerText = score * 10;
-
 } 
 
  
