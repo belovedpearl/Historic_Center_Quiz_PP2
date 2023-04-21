@@ -118,6 +118,11 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById("firstPage").classList.add("hide"); 
         document.getElementById("nameArea").classList.remove("hide"); 
     })
+
+    // To open up the score page
+    let viewScore = document.getElementById("viewScore");
+    viewScore.addEventListener("click", viewSavedScore)
+    
     // To go back to the firstpage
     let back = document.getElementById("backFromInstruct");
     back.addEventListener("click", function(){
@@ -145,10 +150,6 @@ document.addEventListener("DOMContentLoaded", function(){
      // To return back to the start game listen for
      let reStart = document.getElementById("restart")
      reStart.addEventListener("click", startOver)
-
-     // To open up the score page
-     let highScore = document.getElementById("highScore");
-     highScore.addEventListener("click", viewScore)
 
      // call functions to continue running the game
      runGame()
@@ -337,7 +338,7 @@ function progressBar(){
   * Opens up the high score page
   * List the saved scores
   */
- function viewScore(){
-    document.getElementById("firstPage").classList.add("hide"); 
-    document.getElementById("highScore").classList.remove("hide");
+ function viewSavedScore(){
+   document.getElementById("firstPage").classList.add("hide"); 
+   document.getElementById("highScore").classList.remove("hide");
  }
