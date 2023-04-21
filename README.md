@@ -102,6 +102,7 @@
    * Points update. 
    * Number of loss record.
    * Overall score obtained by the user.
+   * No "Reset" button to allow true test shown at the end of the test.
 
 
 ---
@@ -112,7 +113,7 @@
    * To easily navigate and understand the game.
    * Be informed about historic centers around.
    * To be able to access the game from different media.
-   * To be able to reset the game whenever they feel like.
+
 
 ---
 
@@ -195,7 +196,9 @@ The main page is displayed once the websites is open
 
 
   <pic>
+
 ---  
+
    **Player Name Entry Page**
 
    * This page opens up when the user clicks on the enter name button
@@ -204,12 +207,13 @@ The main page is displayed once the websites is open
 
      
 
-    <pic>
+  <pic>
+
 ---
 
 **Welcome Page** 
 
-    This page welcomes the user to the game and also challenges the user, it opens when the user submits the name value. A click on the startgame option loads the game page.
+This page welcomes the user to the game and also challenges the user, it opens when the user submits the name value. A click on the startgame option loads the game page.
 
 
 <pic>
@@ -217,20 +221,22 @@ The main page is displayed once the websites is open
 ---
 
 **Game Page**
-     This page displays the quiz body for user to interract with after the user starts the game, it keeps a record of right question answered, wrong question chosen and it also features a progress bar to inform the user about how many right answer hes has chosen.
-    The page consist of the following:
+This page displays the quiz body for user to interract with after the user starts the game, it keeps a record of right question answered, wrong question chosen and it also features a progress bar to inform the user about how many right answer hes has chosen.
 
-    * A section that contains the image of the historic center.
-    * An option area from which the user can select a choice.
-    * A progress bar to keep the user informed about correct choice made.
-    * Score area to update the user on the number of questions answered right.
-    * A section to keep the user informed about the number of questions answered wrong.
-    * Count showing the number of questions answered.
+The page consist of the following:
+* A section that contains the image of the historic center.
+* An option area from which the user can select a choice.
+* A progress bar to keep the user informed about correct choice made.
+* Score area to update the user on the number of questions answered right.
+* A section to keep the user informed about the number of questions answered wrong.
+* Count showing the number of questions answered.
 
-   Once the page is loaded, the user is expected to make a choice from the list to view the next question.
+Once the page is loaded, the user is expected to make a choice from the list to view the next question.
 
-   Each right answer attracts 10 points, the total is presented to the user at the end of the game.
-   <pic>
+Each right answer attracts 10 points, the total is presented to the user at the end of the game.
+
+<pic>
+
 ---
 
  **Endpage**
@@ -239,6 +245,8 @@ The main page is displayed once the websites is open
    It consist of the player's total score and a detailed summary of questions answered right and questions answered wrong.
    The end message address the user with the provided username putting forward a congratulatory message on the score and number of questions answered right.
    This page consist of a home button which takes the user to the start of the game and resets the game to the start point.
+
+
  <pic>
 
 ---
