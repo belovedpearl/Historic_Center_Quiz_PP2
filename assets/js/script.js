@@ -142,9 +142,13 @@ document.addEventListener("DOMContentLoaded", function(){
      let welcomePage = document.getElementById("welcome");
      welcomePage.classList.add("hide");
 
-     //To return back to the start game listen for
+     // To return back to the start game listen for
      let reStart = document.getElementById("restart")
      reStart.addEventListener("click", startOver)
+
+     // To open up the score page
+     let highScore = document.getElementById("highScore");
+     highScore.addEventListener("click", viewScore)
 
      // call functions to continue running the game
      runGame()
@@ -326,4 +330,14 @@ function progressBar(){
     let wrong = document.getElementById("wrong").innerText;
     wrong.innerText = 0;
     window.location.reload()
+ }
+
+
+ /**
+  * Opens up the high score page
+  * List the saved scores
+  */
+ function viewScore(){
+    document.getElementById("firstPage").classList.add("hide"); 
+    document.getElementById("highScore").classList.remove("hide");
  }
