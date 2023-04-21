@@ -93,12 +93,19 @@ input{
 #nameArea,
 #welcome,
 #howTo,
+#highScore,
 #noScript{
     width: 600px;
     min-height: 450px;
     border: 2px solid black;
     border-radius: 20px;
     margin: 50px;
+}
+
+/*____ Style to center highscore box _____*/
+#highScore{
+   margin: 0 auto;
+    
 }
 
 
@@ -297,6 +304,7 @@ body.overlay #mainUI{
     #firstPage,
     #nameArea,
     #welcome,
+    #highScore,
     #howTo,
     #noScript{
         width: 95%;
