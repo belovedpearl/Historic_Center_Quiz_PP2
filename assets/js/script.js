@@ -151,6 +151,10 @@ document.addEventListener("DOMContentLoaded", function(){
      let reStart = document.getElementById("restart")
      reStart.addEventListener("click", startOver)
 
+     // To open up highscore page
+     let viewScore = document.getElementById("viewScore")
+     viewScore.addEventListener("click", saveScore)
+
      // call functions to continue running the game
      runGame()
      countdown()
