@@ -51,7 +51,11 @@ input{
     margin: auto;
     width: 400px;     
 }
-
+img{
+    width: 50%;
+    height: 150px;
+    border-radius: 20px;
+}
 /*___ Style button on each page and its behavior when pressed ___*/
 .btn{
     border-radius: 15px;
