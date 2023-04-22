@@ -357,8 +357,20 @@ function progressBar(){
   *  Open up the high score page
   */
  function saveScore(){
+    // selects the different sections with the class hide
     document.getElementById("firstPage").classList.add("hide")
     document.getElementById("highScore").classList.remove("hide")
+
+    // Gets saved item from the local storage andputs it on the highscore page
+    let highScorePage = JSON.parse(localStorage.getItem("scores") || [])
+    console.log(highScorePage)
+    let highContainer = document.getElementById("highScoreContainer");
+  
+    highContainer.innerHTML = highScorePage.map(scores => {
+    return `
+        <li> ${scores.nameX} - ${scores.scoreX}</li>
+           `
+  }).join('');
  }
 
 
