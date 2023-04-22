@@ -155,9 +155,9 @@ document.addEventListener("DOMContentLoaded", function(){
      let viewScore = document.getElementById("viewScore")
      viewScore.addEventListener("click", saveScore)
 
-    //  // To return back home from the highscore page
-    //  let highHome = document.getElementById("homeFrmScore")
-    //  highHome.addEventListener("click", highBackHome) 
+    // Add event listener to save score
+    let save = document.getElementById("save")
+     save.addEventListener("click", saveHighScore)
 
 
      // call functions to continue running the game
