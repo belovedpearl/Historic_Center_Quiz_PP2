@@ -155,6 +155,11 @@ document.addEventListener("DOMContentLoaded", function(){
      let viewScore = document.getElementById("viewScore")
      viewScore.addEventListener("click", saveScore)
 
+    //  // To return back home from the highscore page
+    //  let highHome = document.getElementById("homeFrmScore")
+    //  highHome.addEventListener("click", highBackHome) 
+
+
      // call functions to continue running the game
      runGame()
      countdown()
@@ -354,4 +359,13 @@ function progressBar(){
  function saveScore(){
     document.getElementById("firstPage").classList.add("hide")
     document.getElementById("highScore").classList.remove("hide")
+ }
+
+
+ /**
+  * Return the page back to the home page
+  */
+ function highBackHome(){
+    document.getElementById("firstPage").classList.remove("hide")
+    document.getElementById("highScore").classList.add("hide")
  }
