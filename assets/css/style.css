@@ -8,21 +8,20 @@
 body{
     background: linear-gradient(138deg, rgb(32,201, 255) 36.7%, rgb(52, 79, 88) 84.4%, rgb(255, 255, 255) 119.7%);
     font-family: 'Andika', sans-serif;
-    text-align: center;
-     
+    text-align: center;  
 }
+
 #mainUI{
+    align-items: center;  
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    
+    justify-content: center;    
 }
 
 h1{
     font-size: 250%;
-    padding: 40px;
     margin: 50px;
+    padding: 40px; 
 }
 
 h2{
@@ -45,26 +44,24 @@ p{
 }
 
 input{
-    width: 400px;
-    height: 40px;
+    border-radius: 15px;
     font-size: 150%;
     font-weight: 700;
-    border-radius: 15px;
-    margin: auto;    
+    height: 40px;
+    margin: auto;
+    width: 400px;     
 }
-
-/*____ CLASS STYLES ___*/
 
 /*___ Style button on each page and its behavior when pressed ___*/
 .btn{
-    margin: 5px;
-    width: 150px;
-    height: 40px;
-    font-size: 120%;
     border-radius: 15px;
+    font-size: 120%;
     font-weight: 900;
+    height: 40px;
+    margin: 5px;
+    width: 150px; 
 }
-
+/*==== Button Style from W3School ====*/
 .btn:hover{
     background-color: rgb(52, 79, 88);
     color: rgb(255, 255, 255);
@@ -95,19 +92,17 @@ input{
 #howTo,
 #highScore,
 #noScript{
-    width: 600px;
-    min-height: 450px;
     border: 2px solid black;
     border-radius: 20px;
     margin: 50px;
+    min-height: 450px;
+    width: 600px; 
 }
 
 /*____ Style to center highscore box _____*/
 #highScore{
-   margin: 0 auto;
-    
+   margin: 0 auto;   
 }
-
 
 /*___ Style Applied to Logo ___*/
 #logo{
@@ -125,29 +120,31 @@ input{
 }
 
 /*___ Style the endPage ___*/
+/*=== CSS Transition at https:youtu.be/EVze4Cq-dZ8*/
 body.overlay > #endPage{
     opacity: 1;
-    visibility: visible;
     transform: scale(1);
+    visibility: visible; 
 }
+
 body.overlay #mainUI{
     filter: blur(4px);
 }
 
 #endPage{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    align-items: center;
     background-color: rgba(255, 255, 255, .85);
+    bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    left: 0;
     opacity: 0;
-    visibility: hidden;
-    transition: all .20s ease-out;
+    position: fixed;
+    right: 0;
+    top: 0;
     transform: scale(1.5);
+    transition: all .20s ease-out;
+    visibility: hidden;
 }
 
 .endMessage{
@@ -155,82 +152,85 @@ body.overlay #mainUI{
     font-size: 150%;
     font-style: oblique;
 }
+
 /*___ Style the Game Area ___*/
 
 #game{
-    width: 800px;
-    height: 500px;
-    min-height: 450px;
     border: 2px solid black;
     border-radius: 20px;
-    
-}
-#gameBody{
-    width: 100%;
     height: 500px;
+    min-height: 450px;
+    width: 800px;
+}
+
+#gameBody{
     display: flex;
     flex-direction: column;
+    height: 500px;
+    width: 100%;
 }
 
 #questionOption{
-    width: 100%;
-    height: 360px;
     display: flex;
+    height: 360px;
+    width: 100%; 
 }
+
 #options{
     display: inline-block;
-    width: 45%;
     padding-top: 60px;
+    width: 45%;
 }
+
 #questionImage{
-    width: 50%;
-    height: 100%;
     border-radius: 0 20px 20px 0;
+    height: 100%;
     margin: 0;
+    width: 50%;
 }
 
 /*___ Style Applied to each option area ___*/
 
 .option{
+    border-radius: 15px;
     display: block;
-    width: 90%;
+    font-weight: 700;
     height: 50px;
     margin: 20px;
-    border-radius: 15px;
-    font-weight: 700;
+    width: 90%;
 }
 
 /*___ Progress Bar Styling ___*/
 
 /*--- https://youtu.be/QxQRtwAtqKE   ----*/
 #progress{
-    position: relative;
     border: 1px solid black;
     border-right: none;
+    position: relative; 
 }
 
 .progress-inner{
-    width: 100%;
+    background-color: white;
+    bottom: 0;
     height: 100%;
     position: absolute;
     top: 0;
-    bottom: 0;
-    background-color: white;
     transform: scaleX(0);
     transform-origin: center left;
     transition: transform .4s ease-out;
+    width: 100%;
 }
 
 #boxes{
     display: flex;
     width: 100%;
-
 }
+
 .box{
     height: 40px;
-    width: 20px;
     border-right: 1px solid black;
     flex: 1;
+    width: 20px;
 }
 
 #ansQues{
@@ -246,30 +246,28 @@ body.overlay #mainUI{
 }
 
 #recordArea{
-    
-    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100%; 
 }
 .circle{
-    
-    width: 40px;
-    height: 40px;
+    align-items: center;
+    background-color: rgb(255, 255, 255, .8);
+    border: 2px solid black;
     border-radius: 50%;
     display: flex;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
     font-size: 130%;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255, .8);
+    height: 40px;
+    justify-content: center;
+    width: 40px;
 }
 
 #time{
-    font-size: 180%;
     color: white;
+    font-size: 180%;
 }
+
 .fa-stopwatch-20{
     color: black;
     font-size: 130%;
@@ -301,8 +299,8 @@ body.overlay #mainUI{
 @media screen and (max-width: 800px) {
     
     #game{
-        width: 600px;
         min-height: 550px;
+        width: 600px; 
     }
 }
 
@@ -317,28 +315,30 @@ body.overlay #mainUI{
     }
     h1{
         font-size: 150%;
-        padding: 0;
         margin: 80px;
+        padding: 0; 
     }
     input{
         width: 90%;
     }
     #game{
-        width: 300px;
-        min-height: 450px;
         display: flex;
         flex-direction: column;
+        min-height: 450px;
+        width: 300px;
     }
     
     #recordArea{
         display: none;
     }
+
     #questionOption{
         flex-direction: column;
     }
+
     #questionImage{
-        width: 100%;
         height: 200px;
+        width: 100%;
     }
     
     .option{
