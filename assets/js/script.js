@@ -151,10 +151,6 @@ document.addEventListener("DOMContentLoaded", function(){
      let reStart = document.getElementById("restart")
      reStart.addEventListener("click", startOver)
 
-     // To open up highscore page
-     let viewScore = document.getElementById("viewScore")
-     viewScore.addEventListener("click", saveScore)
-
     // Add event listener to save score
     let save = document.getElementById("save")
      save.addEventListener("click", saveHighScore)
@@ -174,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function(){
  * Takes its value from the input given in the page before
  */
 function welcome(name){
-    console.log(name)
+   // console.log(name)
     let playerName = document.getElementById("playerName");
     playerName.innerText = name
 }
@@ -237,7 +233,7 @@ function countdown(){
 for (let option of options){
     option.addEventListener("click", e => {
         let selectAns = e.target;
-        console.log(selectAns);
+        //console.log(selectAns);
         if (selectAns.innerText === currentQuestion.answer){
             option.classList.add("correct"); 
             increaseScore()
@@ -257,7 +253,7 @@ for (let option of options){
 
 function disableClick(){
     let options = document.getElementsByClassName("option");
-    console.log(options)
+    //console.log(options)
     for (let option of options){
         option.disabled = true;
     }
@@ -345,11 +341,23 @@ function progressBar(){
 
  /**
   * Opens up the high score page
-  * List the saved scores
-  */
+   * Gets the saved score from the local storage
+   * List the saved scores
+ */
  function viewSavedScore(){
    document.getElementById("firstPage").classList.add("hide"); 
    document.getElementById("highScore").classList.remove("hide");
+
+// Gets saved item from the local storage andputs it on the highscore page
+let highScorePage = JSON.parse(localStorage.getItem("scores") || [])
+console.log(highScorePage)
+let highContainer = document.getElementById("highScoreContainer");
+
+highContainer.innerHTML = highScorePage.map(scores => {
+return `
+    <li class="high-score"> ${scores.nameX} - ${scores.scoreX}</li>
+       `
+}).join('');
  }
 
 
@@ -368,7 +376,7 @@ function progressBar(){
   
     highContainer.innerHTML = highScorePage.map(scores => {
     return `
-        <li> ${scores.nameX} - ${scores.scoreX}</li>
+        <li class="high-score"> ${scores.nameX} - ${scores.scoreX}</li>
            `
   }).join('');
  }
