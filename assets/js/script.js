@@ -346,3 +346,12 @@ function progressBar(){
    document.getElementById("firstPage").classList.add("hide"); 
    document.getElementById("highScore").classList.remove("hide");
  }
+
+
+ /**
+  *  Open up the high score page
+  */
+ function saveScore(){
+    document.getElementById("firstPage").classList.add("hide")
+    document.getElementById("highScore").classList.remove("hide")
+ }
