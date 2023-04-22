@@ -1,10 +1,10 @@
 # EXPLORE - *Historic Centers Around the world*
 
-[View code here](https://github.com/belovedpearl/Green_Space-PP1)
+[View code here](https://github.com/belovedpearl/Historic_Center_Quiz_PP2)
 
 ![Responsiveness](assets/presentation/sitepresentation.webp)
 
-[View site responsiveness here](https://ui.dev/amiresponsive?url=%20https://belovedpearl.github.io/Green_Space-PP1/)
+[View site responsiveness here](https://ui.dev/amiresponsive?url=https://belovedpearl.github.io/Historic_Center_Quiz_PP2/)
 
 
 ---
@@ -85,6 +85,8 @@
 
  Historic center quiz features differnt historic centers around the world, it features about 20 differnt loactions centers around the world and test ability test ability to identify each. It also exposes the mind to all these places of interest. 
  Each question is displayed in form of a picture with 4 options to choose from. To get the right answer, you need to click on the correct option. The quiz diablea the buttons to prevent multiple entry and brings up the next question after the first click.
+
+ Get to know more about the world playing this quiz.
 
 
 ---
@@ -194,6 +196,8 @@ The main page is displayed once the websites is open
 
   *  **Play Game Button**: This prompts the users to enter his name which is used in referencing the player at the end of the game. 
 
+  *  **High Score Button**: This button allow users to view previously saved high scores. It keeps a record of 5 high scores that have been recorded. 
+
 
   <pic>
 
@@ -242,9 +246,9 @@ Each right answer attracts 10 points, the total is presented to the user at the 
  **Endpage**
 
    This page opens up after 10 questions have been answered by the user or when the player runs out of the allocated time.
-   It consist of the player's total score and a detailed summary of questions answered right and questions answered wrong.
+   It presents the player's total score and a detailed summary of questions answered right and questions answered wrong.
    The end message address the user with the provided username putting forward a congratulatory message on the score and number of questions answered right.
-   This page consist of a home button which takes the user to the start of the game and resets the game to the start point.
+   This page consist of a home button which takes the user to the start of the game and resets the game to the start point. It also consist of a save score button which saves the player's score if pressed and can be viewed on the highscore page if it meets top 5 scores.
 
 
  <pic>
@@ -257,22 +261,15 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 
 ---
 
- * I will like to add a response page after users submit their emails for newsletter subscription or use javasript to pop up a message that users have been registered for subscription.
+ * I will audio to improve user experience of the game.
 
- * A notification that "Submitted emails have been recieved and will get newsletters from the time of subscription"
+ * Features that allow users to choose some custom settings to personalize the game.
 
- * A testimonial page where the service providers allow people to register their comments about the platform.
+ * .Randomize the position of each option.
 
- * A gallery page to promote beauty that gardening bestows on the environment.
+ * Add a reward section where users can choose a gift based on the scores they get.
 
- * I will like to include a live chat menu where users can get to sort whatever 
- queries they have.
-
- * A pop-up message on clicking 'Get Quote' which asks users questions that pertains to the services they require and provides an estimate quote for the required service.
-
- * On clicking the **Get Started** link, users will be provided a list of relevant service providers for easy contact.
-
- * A search menu that provide a short way of navigating through the site.
+ * Connect with social media account of users to provide a means to share the game scores online.
 
  ---
 
@@ -281,16 +278,16 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 ---
 
 
-* The design choice was dictated by my ability to use the knowledge gained from the first module of the course. While presenting challenges, it allowed me to achieve a further growth in understanding of the concepts taught better.
+* For simplicity and my hope to learn more so that users can improve the game appearance to their desired choice, I have opted to use linear gradient to design the body.
 
-* From the start of the program, I aimed to design a website that covers in detail the concepts taught in the module and more.
+
 
 ### Font
 
-* Roboto
-    * Evokes a clean and bold style which prompts its readers wanting to act.
-* Archivo
-    * I believe it complements and blends with Roboto font to give a meaning outlook to the design.
+* Andika
+    * I believe it is a clean font for this game and its bold, its sourcr is google font.
+* Sans-serif
+    * This is set as a fall-back font for device that might not load google fonts and its easily available.
 
 
 ### Colour Scheme
@@ -313,7 +310,9 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 
 ---
 
-I have designed the site to be easily accessible  with links thats connect different pages together in order to prompt decision making and to allow for ease of access to information required by its users.
+Logo opens up to the opening page.
+Buttons are used to move across different section of the page.
+
 
 * Services section
    
@@ -337,6 +336,8 @@ I have designed the site to be easily accessible  with links thats connect diffe
 
 * CSS
 
+* JAVASCRIPT
+
 ### Frameworks and Programs
 
 
@@ -349,7 +350,10 @@ I have designed the site to be easily accessible  with links thats connect diffe
 
 
 * Gitpod
-    * The project was put together using Gitpod development environment. From here, I could commit and push all of my changes to Github throughout the project.
+    * The project was started using Gitpod development environment. From here, I could commit and push all of my changes to Github before switching to the new IDE.
+
+* Code Anywhere
+    * This is the new IDE inroduced by the institute, as intructed I switched to this new IDE.
 
 ---
 
@@ -410,7 +414,7 @@ The live link can be found [here](https://belovedpearl.github.io/Green_Space-PP1
   
   By forking a repository, you make a copy of a repository without affecting the original repository. You can fork this repository using the following steps.
 
-  * Login to GitHub and locate the [GitHub Repository](https://github.com/belovedpearl/Green_Space-PP1).
+  * Login to GitHub and locate the [GitHub Repository](https://github.com/belovedpearl/Historic_Center_Quiz_PP2).
 
   * At the top of the repository just above the "Settings" button on the menu, locate the "Fork" button.
 
@@ -431,24 +435,16 @@ The live link can be found [here](https://belovedpearl.github.io/Green_Space-PP1
   *  [CSS validation](https://jigsaw.w3.org/)
   *  [Contrast checker](https://dequeuniversity.com/)
   *  [Coolors.co](https://coolors.co/)
-  *  [Responsiveness Testing](https://ui.dev/amiresponsive)
-   Logo: https://logo-maker.freelogodesign.org/
+  *  [Font Awesome](https://fontawesome.com/)
 
-  * [Font Awesome](https://fontawesome.com/)
+  * [Fonts](https://fonts.google.com/) 
 
-  * [Fonts](https://fonts.google.com/)
+  * [Progress Bar Tutorial](https://youtu.be/kjhsS4INZ9o)
 
-  * [Font pair](https://fontpair.com/) 
-
-  * [Fonts Awesome](https://www.fontawesome.com/)
-
-  * [Automatic Image Slideshow](https://youtu.be/FrQR7igd9bs)
-
-  * [Fonts](https://fonts.google.com/)
+  * [CSS Transition](https:youtu.be/EVze4Cq-dZ8)
 
   * [Prettier](https://prettier.io/playground/)
 
-  * [Map](https://www.embedgooglemap.net/locationChester)
 
 
 
@@ -566,11 +562,11 @@ On all html pages, some issues were found during the check over [W3C Validator c
 
 
 * Images: 
-Images used are from Isostock, Nikon corporation, png tree and png all
+Images used are from [Pexels](https://pexels.com)
 
 * Content Sources:
 
-As a graduate of Agriculture, I have the understanding about gardening hence I put together all the lines used in illustration with details that I know pertains to each topic.
+[25 Best Historical Places in the World](https://luxurycolumnist.com/best-historical-places-in-the-world/)
 
 ---
 
