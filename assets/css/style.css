@@ -290,6 +290,12 @@ body.overlay #mainUI{
     background-color: red;
 }
 
+/*___ Style applied to High Score text ___*/
+.high-score{
+    font-size: 120%;
+    font-weight: 700;
+}
+
 /*___________ Responsiveness on Smaller Screens _________________*/
 
 @media screen and (max-width: 800px) {
