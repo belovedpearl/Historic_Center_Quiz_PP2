@@ -369,3 +369,27 @@ function progressBar(){
     document.getElementById("firstPage").classList.remove("hide")
     document.getElementById("highScore").classList.add("hide")
  }
+
+ /**
+  * Save score
+  * Resolve player name and score into an object
+  * Sets and save to the local storage
+  */
+ function saveHighScore(){
+    let score = document.getElementById("totalScore")
+    console.log(score.innerText)
+    let name = document.getElementById("playerName")
+    console.log(name.innerText)
+ 
+    let highScore = {
+        scoreX : score.innerText,
+        nameX : name.innerText
+    }
+
+    let getScore = JSON.parse(localStorage.getItem("scores")) || []
+    getScore.push(highScore)
+    getScore.sort(function(a, b){return b.scoreX - a.scoreX})
+    getScore.splice(5)
+    console.log(getScore)
+    localStorage.setItem("scores", JSON.stringify(getScore))
+}
