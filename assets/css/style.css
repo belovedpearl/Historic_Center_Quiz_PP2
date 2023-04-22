@@ -56,6 +56,11 @@ img{
     height: 150px;
     border-radius: 20px;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
 /*___ Style button on each page and its behavior when pressed ___*/
 .btn{
     border-radius: 15px;
@@ -187,7 +192,7 @@ body.overlay #mainUI{
 }
 
 #questionImage{
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 0 20px 0;
     height: 100%;
     margin: 0;
     width: 50%;
