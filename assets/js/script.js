@@ -136,10 +136,12 @@ document.addEventListener("DOMContentLoaded", function(){
     let submit = document.getElementById("submit");
     submit.addEventListener("click", function(){
     let name = document.getElementById("nameValue").value;
-    document.getElementById("nameArea").classList.add("hide");
-    let welcomePage = document.getElementById("welcome");
-    welcomePage.classList.remove("hide");
-    welcome(name); 
+    if (name){
+        document.getElementById("nameArea").classList.add("hide");
+        let welcomePage = document.getElementById("welcome");
+        welcomePage.classList.remove("hide");
+        welcome(name);
+    } 
     })
     
     // To access the main game area
