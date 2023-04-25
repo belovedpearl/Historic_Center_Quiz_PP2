@@ -306,7 +306,9 @@ body.overlay #mainUI{
 /*___________ Responsiveness on Smaller Screens _________________*/
 
 @media screen and (max-width: 800px) {
-    
+    #questionOption{
+        margin-bottom: 50px;
+    }
     #game{
         min-height: 550px;
         width: 600px; 
@@ -348,6 +350,7 @@ body.overlay #mainUI{
 
     #questionOption{
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     #questionImage{
@@ -361,12 +364,12 @@ body.overlay #mainUI{
 
     }
     #options{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding-top: 5px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }  
     #questionOption{
         height: 398px;
