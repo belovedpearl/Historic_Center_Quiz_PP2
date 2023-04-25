@@ -213,7 +213,7 @@ function runGame(){
  * At endtime; calls the function to end the game
  */
 function countdown(){
-    let counter = 60;
+    let counter = 360;
      setInterval(()=>{
      let time = document.getElementById("time");
      time.innerText = counter--;
