@@ -321,6 +321,7 @@ body.overlay #mainUI{
     #howTo,
     #noScript{
         width: 95%;
+        height: 100%;
     }
     h1{
         font-size: 150%;
