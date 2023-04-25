@@ -353,30 +353,13 @@ Buttons are used for easy navigation across different section of the application
 
 * Start Game button submits without inputing a username. 
     * Disabling the button and adding an event listener to the button listening for "Keyup" on the input button fixed this.
-* Input on contact form not displaying text
-    * Using the dev tool, I realised "Color: white" set on the input caused the bug. Removing the color fixed the bug.
-*  Images appeared smaller than I intend, changing background size contain to cover fixed it.
 
-
-* "More Service" link on the index page was too close to the content
-
-    * Adding padding, height and centering text to the div fixed this.
-
-* Footer on service page was not properly presented, looking through the html code, I realised a wrong id was inserted.
-
-* Cursor on submit button was noticed to be in arrow.
-   * Changing cursor setting to pointer fixed this.
-
-* Table used in the contact form gave more margin between the cells ob changing the display to block.
-   * Changing the table tag to unordered list gave the list equal spacing when changed to block display.
-* Textarea was noticed to be smaller than the other inputs on small screen.
-   * Adjusting the style on the textarea fixed this.
 
 ### Unfixed Bugs
 
   * I noticed errors in the console which is a result of the embeded google map. It displays appropriately, I feel it is above my current knowledge.
 
-  * Some of my commit statements are not so specific but it was improved upon in subsequent commits.
+  * 
 
 ---
 
@@ -434,42 +417,22 @@ The live link can be found [here](https://belovedpearl.github.io/Green_Space-PP1
   * [Prettier](https://prettier.io/playground/)
 
 
-
-
 ---
 
 ## Testing
 
 ---
 
-   ### Validator Testing
+### Validator Testing
 
 #### HTML
+* No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/#validate_by_uri)
 
 
-On all html pages, some issues were found during the check over [W3C Validator check](https://validator.w3.org/#validate_by_input)
-
-   - I was warned that <link rel="preload"> must have "as" attribute.
-      > Included "as" in the link tag solved this issue.
-
-   - Error: loading:"Easy" not to be included in div at this time
-      > Removing all "loading" attribute fixed this
-
-   - An error in identifying a class as an attribute.
-      > Changed the identified id to class attribute
-   
-   - Label id was identified to be wrongly spelt.
-      > Changed the letter to a lower case.
-
-   - Table header was less than column created.
-      > Added more "th" to the "tr"
-
-   - Attribute "tel" was not correctly defined.
-      > Deleted the spacing contained in the "tel" attribute fixed this.
 
 #### CSS
 
- * No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/#validate_by_input)
+ * No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/#validate_by_uri)
 
 
 ### Lighthouse Performance
@@ -512,22 +475,14 @@ On all html pages, some issues were found during the check over [W3C Validator c
 | Action (CLICK) | Expected Behavior   | Actual Behavior |
 | :---: | :---: | :---: |
 | Logo | Load the homepage  | P   |
-| HOME menu | Links directly to home page   | P   |
-| SERVICE menu | Direct to Service page   | P   |
-| CONTACT Us menu | Direct to the contact page  | P   |
-| CONTACT US >| Direct to the contact page  | P   |
-| Get Started > | Direct to contact page   | P   |
-| More Service >| Direct to service page  | P   |
-| Blog " >> "| Direct to an external blog page   | P   |
-| Phone Number | Pops up a way to call   | P   |
-| Submit | Submit details of the form   | P   |
-| Facebook icon | Opens up facebook page in another tab  | P   |
-| Instagram Icon | Opens up Instagram page in another tab  | P   |
-| Twitter Icon | Opens up Twitter page in another tab   | P   |
-| From the service page, Get Started > | Direct to the contact page  | P   |
-| From Contact page, submit| Direct to a response page   | P   |
-| From the contact page, click on the checkbox | Mark the clicked one   | P   |
-| From the Response page, click Home| Direct to home page  | P   |
+| Instruction Button | Links to the instruction section  | P   |
+| Home Button | Returns to the homepage from the instruction page   | P   |
+| Play Game Button | Opens up the username input page  | P   |
+| Start Game Button | Opens up the game page   | P   |
+| High Score Button  | Opens up the highScore page  | P |
+| Home Button| Returns the user back to the main page  | P   |
+| Start Over Button | Restarts the game after 60 seconds timeout or 10 questions answered   | P   |
+| Save Score | Saves the score to the local storage   | P   |
 
 
 ---
