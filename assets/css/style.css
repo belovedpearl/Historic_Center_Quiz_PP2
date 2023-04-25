@@ -8,14 +8,17 @@
 body{
     background: linear-gradient(138deg, rgb(32,201, 255) 36.7%, rgb(52, 79, 88) 84.4%, rgb(255, 255, 255) 119.7%);
     font-family: 'Andika', sans-serif;
+    height: 100vh;
     text-align: center;  
+    margin: 0 auto; 
+    width: 100%;
 }
 
 #mainUI{
     align-items: center;  
     display:flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;   
 }
 
 h1{
