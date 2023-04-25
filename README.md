@@ -270,7 +270,6 @@ Each right answer attracts 10 points, the total is presented to the user at the 
  * Add a reward section where users can choose a gift based on the scores they get.
 
  * Connect with social media account of users to provide a means to share the game scores online.
-
  ---
 
 ## Design Choices
@@ -311,19 +310,8 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 ---
 
 Logo opens up to the opening page.
-Buttons are used to move across different section of the page.
+Buttons are used for easy navigation across different section of the application. 
 
-
-* Services section
-   
-   This introduces the user to garden standard practices and easy access with links connecting its providers.
-* Blog Section
-
-   This section provides users with gardening updates. I have designed all links to open in a new tab.
-   
-* Contact Us
-
-   This is included to provide easy contact to the providers.
 
 ---
 
@@ -363,8 +351,8 @@ Buttons are used to move across different section of the page.
 
 ### Fixed Bugs
 
-* Caption Image
-    * I discovered the caption image was not properly placed on smaller screen, it was resolved by resizing and viewing it till I got a properly placed caption image.
+* Start Game button submits without inputing a username. 
+    * Disabling the button and adding an event listener to the button listening for "Keyup" on the input button fixed this.
 * Input on contact form not displaying text
     * Using the dev tool, I realised "Color: white" set on the input caused the bug. Removing the color fixed the bug.
 *  Images appeared smaller than I intend, changing background size contain to cover fixed it.
