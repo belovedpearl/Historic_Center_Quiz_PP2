@@ -98,9 +98,8 @@ let questions = [
 ];
 
 
-// Declare variables
 let currentQuestion = null;
-let questioncounter = 0;
+let questionCounter = 0;
 
 
 // DOMContent loaded allows the document to be loaded before adding event listeners to all the required areas
@@ -152,6 +151,29 @@ document.addEventListener("DOMContentLoaded", function(){
     let welcomePage = document.getElementById("welcome");
     welcomePage.classList.add("hide");
 
+    // Check the options buttons with their class name for a click
+    // Add the class correct, increase score and add to the progress bar if selected one is correct
+    // Add the class wrong, increase wrong if selected one is wrong
+    // Disable the button after the first click
+    let options = document.getElementsByClassName("option");
+    for (let option of options){
+    option.addEventListener("click", e => {
+        let selectAns = e.target;
+        
+        if (selectAns.innerText === currentQuestion.answer){
+            option.classList.add("correct"); 
+            increaseScore();
+            progressBar();
+        
+        } else {
+            option.classList.add("wrong");
+            increaseWrong();
+        } 
+    disableClick();
+    setTimeout(runGame, 1000);
+    })
+    }
+
     // To return back to the start game listen for
     let reStart = document.getElementById("restart");
     reStart.addEventListener("click", startOver);
@@ -186,11 +208,11 @@ function welcome(name){
 function runGame(){
     resetOptions();
     let questionNumber = document.getElementById("questionNum");
-    questionNumber.innerText = questioncounter++;
+    questionNumber.innerText = questionCounter++;
    
-    if (questioncounter > 10){
+    if (questionCounter > 10){
         stopGame();
-    } else if (questioncounter <= 10){
+    } else {
         const questionIndex = Math.floor(Math.random() * 5);
         // Use the question index to access the question from the array
         currentQuestion = questions[questionIndex];
@@ -230,28 +252,7 @@ function countdown(){
   }
 
 
-// Check the options buttons with their class name for a click
-// Add the class correct, increase score and add to the progress bar if selected one is correct
-// Add the class wrong, increase wrong if selected one is wrong
-// Disable the button after the first click
-let options = document.getElementsByClassName("option");
-for (let option of options){
-    option.addEventListener("click", e => {
-        let selectAns = e.target;
-        
-        if (selectAns.innerText === currentQuestion.answer){
-            option.classList.add("correct"); 
-            increaseScore();
-            progressBar();
-        
-        } else {
-            option.classList.add("wrong");
-            increaseWrong();
-    } 
-    disableClick();
-    setTimeout(runGame, 1000);
-})
-}
+
 
 /**
 * Disable further clicks on answer buttons 
@@ -285,7 +286,7 @@ function increaseScore(){
 
 /**
 * Stops the game
-* Brings up the hidden section
+* Brings up the endPage section
 * Set the score and right answer in the string
 */
 function stopGame(){
@@ -355,34 +356,13 @@ function viewSavedScore(){
     document.getElementById("highScore").classList.remove("hide");
 
     // Gets saved item from the local storage andputs it on the highscore page
-    let highScorePage = JSON.parse(localStorage.getItem("scores") || []);
+    let highScorePage = JSON.parse(localStorage.getItem("scores") || "[]");
     let highContainer = document.getElementById("highScoreContainer");
 
     highContainer.innerHTML = highScorePage.map(scores => {
     return `
         <li class="high-score"> ${scores.nameX} - ${scores.scoreX}</li>
           `
-    }).join('');
-}
-
-
-/**
-*  Open up the high score page
-*/
-function saveScore(){
-    // selects the different sections with the class hide
-    document.getElementById("firstPage").classList.add("hide");
-    document.getElementById("highScore").classList.remove("hide");
-
-    // Gets saved item from the local storage andputs it on the highscore page
-    let highScorePage = JSON.parse(localStorage.getItem("scores") || []);
-    console.log(highScorePage);
-    let highContainer = document.getElementById("highScoreContainer");
-  
-    highContainer.innerHTML = highScorePage.map(scores => {
-    return `
-        <li class="high-score"> ${scores.nameX} - ${scores.scoreX}</li>
-           `;
     }).join('');
 }
 
