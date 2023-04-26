@@ -364,11 +364,12 @@ body.overlay #mainUI{
     #questionImage{
         height: 170px;
         width: 100%;
+        padding-right: 10px;
     }
     .option{
-        height: 40px;
+        height: 35px;
         margin: 5px;
-        width: 270px;
+        width: 250px;
 
     }
     #options{
@@ -382,4 +383,7 @@ body.overlay #mainUI{
     #questionOption{
         height: 398px;
     }  
+    p{
+        font-size: 110%;
+    }
 }
