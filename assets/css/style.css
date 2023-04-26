@@ -6,11 +6,13 @@
 
 /*____ GENERAL ____*/
 body{
+    align-items: center;
     background: linear-gradient(138deg, rgb(32,201, 255) 36.7%, rgb(52, 79, 88) 84.4%, rgb(255, 255, 255) 119.7%);
+    display: flex;
     font-family: 'Andika', sans-serif;
+    justify-content: center;
     height: 100vh;
-    text-align: center;  
-    margin: 0 auto; 
+    text-align: center;   
     width: 100%;
 }
 
