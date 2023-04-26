@@ -167,6 +167,13 @@ body.overlay #mainUI{
     font-style: oblique;
 }
 
+/*____ Style the endPage restart button on focus ___*/
+#restart:focus{
+    border-color: rgb(32,201, 255);
+    background-color: rgb(52, 79, 88);
+    color: white;
+}
+
 /*___ Style the Game Area ___*/
 
 #game{
