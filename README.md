@@ -138,25 +138,26 @@ Link for the wireframe pictures can be found here
 
 ### Initial Wireframes
 
-
-The main page presents some of the basic service its users can have access to with others stated on the services page and it also highlights the services provided, an update section, contact section, location map and social media links. For ease of access, the main page has links that connects with the contact page to allow the user access the providers easily.
+Initial wireframe representstion of the project concieved outlined below.
 
 ##### Wireframe 1: The landing page
 
 
- ![Display-1](assets/wireframes/greenspace1.webp)
+ ![Display-1](assets/images/wireframes/landingPage.webp)
 
 
-##### Wireframe 2: Services Page
+##### Wireframe 2: Name Input Page
 
 
-![Display-2](assets/wireframes/services.webp)
+![Display-2](assets/images/wireframes/nameInput.webp)
 
 
-##### Wireframe 3: Contact Page
+##### Wireframe 3: Start Game Page
 
 
-![Display-3](assets/wireframes/contact-page.webp)
+![Display-3](assets/images/wireframes/startGamePage.webp)
+
+
 
 
 
@@ -168,12 +169,12 @@ Presention of information on the site will be in the following ways;
 
 ##### Wireframe 4: Desktop and Laptop
 
-![Desktop and Laptop](assets/wireframes/desktop%26laptop.webp)
+![Desktop and Laptop](assets/images/wireframes/largeScreenDisplay.webp)
 
 
-##### Wireframe 5: Tablets and Mobile
+##### Wireframe 5: Mobile
 
-![Tablets and Mobile](assets/wireframes/tablets%26mobile1.webp)
+![Tablets and Mobile](assets/images/wireframes/quizMobileView.webp)
 
 
 
