@@ -83,8 +83,8 @@
 
 ---
 
- Historic center quiz features differnt historic centers around the world, it features about 20 differnt loactions centers around the world and test ability test ability to identify each. It also exposes the mind to all these places of interest. 
- Each question is displayed in form of a picture with 4 options to choose from. To get the right answer, you need to click on the correct option. The quiz diablea the buttons to prevent multiple entry and brings up the next question after the first click.
+ Historic center quiz features different historic centers around the world, it features about 20 differnt locations centers around the world and test ability of its users to identify each. It also exposes the mind to all these places of interest. 
+ Each question is displayed in form of a picture with 4 options to choose from. To get the right answer, you need to click on the correct option. The quiz diables the buttons to prevent multiple entry and brings up the next question after the first click.
 
  Get to know more about the world playing this quiz.
 
@@ -100,10 +100,11 @@
    * To instil knowledge in its users of not so popular historic centers.
    * Take in the player's name to make the experience more personal.
    * Allow users to access the instructions first.
-   * Progress bar to keep its user informed about how well they are performing the test.
+   * Progress bar to keep its user informed about how well they are performing on the test.
    * Points update. 
    * Number of loss record.
    * Overall score obtained by the user.
+   * Save the first highscore in the highscore page.
    * No "Reset" button to allow true test shown at the end of the test.
 
 
@@ -134,7 +135,7 @@ The game seeks to impact knowledge and hence its target audience are old and you
 
 All wireframes are made with Balsamiq
 
-Link for the wireframe pictures can be found here
+Link for the wireframe pictures can be found ![here](assets/images/wireframes)
 
 ### Initial Wireframes
 
@@ -156,9 +157,6 @@ Initial wireframe representstion of the project concieved outlined below.
 
 
 ![Display-3](assets/images/wireframes/startGamePage.webp)
-
-
-
 
 
 ---
@@ -271,7 +269,8 @@ Each right answer attracts 10 points, the total is presented to the user at the 
  * Add a reward section where users can choose a gift based on the scores they get.
 
  * Connect with social media account of users to provide a means to share the game scores online.
- ---
+
+---
 
 ## Design Choices
 
@@ -281,11 +280,10 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 * For simplicity and my hope to learn more so that users can improve the game appearance to their desired choice, I have opted to use linear gradient to design the body.
 
 
-
 ### Font
 
 * Andika
-    * I believe it is a clean font for this game and its bold, its sourcr is google font.
+    * I believe it is a clean font for this game and its bold, its source is google font.
 * Sans-serif
     * This is set as a fall-back font for device that might not load google fonts and its easily available.
 
@@ -293,16 +291,10 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 ### Colour Scheme
 
    
-   In line with the motive of the website, I have selected a shade of green **(Hex Value = #184E20)** and **White** to complement the green nature attribute that the site promotes.
-   Using [color contrast checker](https://dequeuniversity.com/) have checked the contrast of both colors use as foreground and background. Contrast result gave the following;
+   I have selected a mix of blue shades **(rgb(32,201, 255) 36.7%)**, **(rgb(52, 79, 88) 84.4%)**, **black** and **White** to complement site appearance.
+   Using [color contrast checker](https://dequeuniversity.com/) have checked the contrast of both colors use as foreground and background. Contrast result gave the following
 
-   |Foreground | Background | Contrast Ratio | Comment |
-   |-----------|------------|----------------|---------|
-   | #184E20   |  White     | 9.76 : 1       |  Pass   |
-   | White     |  #184E20   | 9.76 : 1       |  Pass   |
-
-   
-   I have also used **RGB(230,32,65)** as an **accent** color to especially in places where the users attention is needed.
+  I have maintained a button text color change to white on hovering to alert the user of the mouse presence on each button
 
 --- 
 
@@ -321,11 +313,14 @@ Buttons are used for easy navigation across different section of the application
 ---
 
 ### Languages
+
 * HTML
 
 * CSS
 
 * JAVASCRIPT
+
+---
 
 ### Frameworks and Programs
 
@@ -353,14 +348,11 @@ Buttons are used for easy navigation across different section of the application
 ### Fixed Bugs
 
 * Start Game button submits without inputing a username. 
-    * Disabling the button and adding an event listener to the button listening for "Keyup" on the input button fixed this.
+    * Adding an if statement to check if there is a name in the input fixed this.
 
 
 ### Unfixed Bugs
-
-  * I noticed errors in the console which is a result of the embeded google map. It displays appropriately, I feel it is above my current knowledge.
-
-  * 
+ * To my current understanding, there is no unfixed bug
 
 ---
 
@@ -374,13 +366,13 @@ Buttons are used for easy navigation across different section of the application
 
 The following illustrate the steps I took to deplay my website;
 
-  * Go to the repository for Green Space.
-  * Click on the "Settings" tab, locate the "Pages" tab and click it.
-  * In the "Build and Deployment" section there is a "Branch Heading". Select to deploy from "main" branch in the dropdown option.
-  * Click on save
-  * A few minutes later, after refreshing the page, there will automatically be an update containing the "live site link".
+  * Go to the repository for [historic center quiz](https://github.com/belovedpearl/Historic_Center_Quiz_PP2).
+  * Click on the "Settings" tab, locate the **"Pages"** tab and click it.
+  * In the **"Build and Deployment"** section there is a **"Branch Heading"**. Select to deploy from **"main"** branch in the dropdown option.
+  * Click on **save**
+  * A few minutes later, after refreshing the page, there will automatically be an update containing the **"live site link"**.
 
-The live link can be found [here](https://belovedpearl.github.io/Green_Space-PP1/).
+The live link can be found [here](https://belovedpearl.github.io/Historic_Center_Quiz_PP2/).
 
 ### How to Fork
   
@@ -388,9 +380,9 @@ The live link can be found [here](https://belovedpearl.github.io/Green_Space-PP1
 
   * Login to GitHub and locate the [GitHub Repository](https://github.com/belovedpearl/Historic_Center_Quiz_PP2).
 
-  * At the top of the repository just above the "Settings" button on the menu, locate the "Fork" button.
+  * At the top of the repository just above the **"Settings"** button on the menu, locate the **"Fork"** button.
 
-  * Once clicked, you should have a copy of the original repository in your own account.
+  * Once **clicked**, you should have a copy of the original repository in your own account.
 
 
 ---
@@ -435,7 +427,9 @@ The live link can be found [here](https://belovedpearl.github.io/Green_Space-PP1
 
  * No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/#validate_by_uri)
 
-
+### JAVASCRIPT
+ * 
+ 
 ### Lighthouse Performance
 
 
