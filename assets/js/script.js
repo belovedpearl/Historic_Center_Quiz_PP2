@@ -157,21 +157,21 @@ document.addEventListener("DOMContentLoaded", function(){
     // Disable the button after the first click
     let options = document.getElementsByClassName("option");
     for (let option of options){
-    option.addEventListener("click", e => {
-        let selectAns = e.target;
+        option.addEventListener("click", e => {
+            let selectAns = e.target;
         
-        if (selectAns.innerText === currentQuestion.answer){
-            option.classList.add("correct"); 
-            increaseScore();
-            progressBar();
+            if (selectAns.innerText === currentQuestion.answer){
+                option.classList.add("correct"); 
+                increaseScore();
+                progressBar();
         
-        } else {
-            option.classList.add("wrong");
-            increaseWrong();
-        } 
-    disableClick();
-    setTimeout(runGame, 1000);
-    })
+            } else {
+                option.classList.add("wrong");
+                increaseWrong();
+            } 
+        disableClick();
+        setTimeout(runGame, 1000);
+        })
     }
 
     // To return back to the start game listen for
@@ -228,7 +228,7 @@ function runGame(){
         choice3.innerText = currentQuestion.options[2];
         let choice4 = document.getElementById("option4");
         choice4.innerText = currentQuestion.options[3];
-        // Splice is used to remove the current question from the available questions to avoid repetition of questions
+        // Remove the current question from the available questions
         questions.splice(questionIndex, 1) ;
     }
     
@@ -249,7 +249,7 @@ function countdown(){
     }
     }, 1000);
      
-  }
+}
 
 
 
@@ -337,7 +337,7 @@ function progressBar(){
 */
 function startOver(){
     document.body.classList.remove("overlay");
-    questioncounter = 0;
+    questionCounter = 0;
     let score = document.getElementById("points").innerText;
     score.innerText = 0;
     let wrong = document.getElementById("wrong").innerText;
@@ -394,4 +394,6 @@ function saveHighScore(){
     getScore.sort(function(a, b){return b.scoreX - a.scoreX});
     getScore.splice(5);
     localStorage.setItem("scores", JSON.stringify(getScore));
+    // Prevent multiple use of save button on a game
+    document.getElementById("save").disabled = true
 }
