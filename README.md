@@ -2,7 +2,7 @@
 
 [View code here](https://github.com/belovedpearl/Historic_Center_Quiz_PP2)
 
-![Responsiveness](assets/presentation/sitepresentation.webp)
+![Responsiveness](assets/images/siteRepresentation/gameResponse.webp)
 
 [View site responsiveness here](https://ui.dev/amiresponsive?url=https://belovedpearl.github.io/Historic_Center_Quiz_PP2/)
 
