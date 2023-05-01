@@ -2,7 +2,7 @@
 
 [View code here](https://github.com/belovedpearl/Historic_Center_Quiz_PP2)
 
-![Responsiveness](assets/images/siteRepresentation/gameResponse.webp)
+![Responsiveness](assets/images/siteRepresentation/screen_responsive.webp)
 
 [View site responsiveness here](https://ui.dev/amiresponsive?url=https://belovedpearl.github.io/Historic_Center_Quiz_PP2/)
 
@@ -19,22 +19,22 @@
    
 * [WireFrames](#wireframes)
     * [Initial Wireframes](#initial-wireframes)
-       * [Wireframe 1](#wireframe-1-the-index-page)
-       * [Wireframe 2](#wireframe-2-services-page)
-       * [Wireframe 3](#wireframe-3-contact-page)
+       * [Wireframe 1](#wireframe-1-the-landing-page)
+       * [Wireframe 2](#wireframe-2-name-input-page)
+       * [Wireframe 3](#wireframe-3-start-game-page)
 
     * [Device Wireframes](#device-wireframe)
        * [Wireframe 4](#wireframe-4-desktop-and-laptop)
-       * [Wireframe 5](#wireframe-5-tablets-and-mobile)
+       * [Wireframe 5](#wireframe-5-mobile)
 * [Features](#features)
-    * [Header](#header)
-    * [Blog](#blog)
-    * [Footer](#footer)
-    * [Newsletter Subscription](#newsletter-subscription)
-    * [Social Media Links](#social-media-links)
-    * [Checkboxes](#checkboxes)
-    * [Call Function](#call-function)
-    * [Submit form](#submit-form)
+    * [Landing Page](#landing-page)
+    * [Instruction Page](#instruction-page)
+    * [High Score Page](#high-score-page)
+    * [Player Name Entry Page](#player-name-entry-page)
+    * [Welcome Page](#welcome-page)
+    * [Game Page](#game-page)
+    * [End Page](#end-page)
+    
 
 * [Future features](#future-features)
 * [Design Choices](#design-choices)
@@ -110,9 +110,10 @@
 
 ---
 
-  ## Users Goal
+## Users Goal
 
 ---
+
    * To easily navigate and understand the game.
    * Be informed about historic centers around.
    * To be able to access the game from different media.
@@ -141,19 +142,20 @@ Link for the wireframe pictures can be found ![here](assets/images/wireframes)
 
 Initial wireframe representstion of the project concieved outlined below.
 
-##### Wireframe 1: The landing page
+
+#### Wireframe 1: The landing page
 
 
- ![Display-1](assets/images/wireframes/landingPage.webp)
+![Display-1](assets/images/wireframes/landingPage.webp)
 
 
-##### Wireframe 2: Name Input Page
+#### Wireframe 2: Name Input Page
 
 
 ![Display-2](assets/images/wireframes/nameInput.webp)
 
 
-##### Wireframe 3: Start Game Page
+#### Wireframe 3: Start Game Page
 
 
 ![Display-3](assets/images/wireframes/startGamePage.webp)
@@ -181,49 +183,71 @@ Presention of information on the site will be in the following ways;
 ## Features
 
 ---
- **Main Page**
+
+### Landing Page
 
 The main page is displayed once the websites is open
 
-  It is made up of the heading "Historic center quiz" telling the user what the page is about. Right under it are two buttons described below.
+It is made up of the heading "Historic center quiz" telling the user what the page is about. Right under it are two buttons described below.
 
-  * **Instruction Button** : This opens up the instruction panel which tells the player more on what to expect in the game.It has a button to return to the main page in order to start the game.
+ ***Instruction Button*** : This opens up the instruction panel which tells the player more on what to expect in the game.It has a button to return to the main page in order to start the game.
      Rules for The Quiz
-     * This page opens up once the user clicks on the instruction button.
-     * It consist of information about the game every user must know.
-     * After reading through the instruction, the user is to press the button "Home" which takes the user back to the main page to continue to the game.
+     *  This page opens up once the user clicks on the instruction button.
+     *  It consist of information about the game every user must know.
+     *  After reading through the instruction, the user is to press the button "Home" which takes the user back to the main page to continue to the game.
 
-  *  **Play Game Button**: This prompts the users to enter his name which is used in referencing the player at the end of the game. 
+  ***Play Game Button***: This prompts the users to enter his name which is used in referencing the player at the end of the game. 
 
-  *  **High Score Button**: This button allow users to view previously saved high scores. It keeps a record of 5 high scores that have been recorded. 
+  ***High Score Button***: This button allow users to view previously saved high scores. It keeps a record of 5 high scores that have been recorded. 
 
 
-  <pic>
+  ![Home Page](assets/images/siteRepresentation/homepage.webp)
 
----  
+---
 
-   **Player Name Entry Page**
+### Instruction Page
+
+ * This page displays the game instruction to guide the user.
+ * It tells the player what to expect and how to go about playing the game.
+ * Using the "Home" button, the player can go back to the homepage.
+
+ ![Instruction Page](assets/images/siteRepresentation/instruction.webp)
+
+---
+
+ ### Highscore Page
+
+ * This page shows the highscore saved.
+ * It features the record of 5 high score
+
+ ![High Score Page](assets/images/siteRepresentation/highscore.webp)
+
+---
+
+### Player Name Entry Page
 
    * This page opens up when the user clicks on the enter name button
-   * This page takes in the player name.
+   * The player **MUST** enter a username to access the quiz.
+   * This page takes in the player name to the game.
    * It consist of a startgame button which gives the player access to the game.
 
      
 
-  <pic>
+  ![Name Enter Page](assets/images/siteRepresentation/nameinput.webp)
 
 ---
 
 **Welcome Page** 
 
-This page welcomes the user to the game and also challenges the user, it opens when the user submits the name value. A click on the startgame option loads the game page.
+This page welcomes the user  with the **Username** provided and also challenges the user. A click on the startgame option loads the game page.
 
 
-<pic>
+![Welcome Page](assets/images/siteRepresentation/welcome.webp)
 
 ---
 
 **Game Page**
+
 This page displays the quiz body for user to interract with after the user starts the game, it keeps a record of right question answered, wrong question chosen and it also features a progress bar to inform the user about how many right answer hes has chosen.
 
 The page consist of the following:
@@ -238,23 +262,23 @@ Once the page is loaded, the user is expected to make a choice from the list to 
 
 Each right answer attracts 10 points, the total is presented to the user at the end of the game.
 
-<pic>
+![Games Page](assets/images/siteRepresentation/largescreengame.webp)
 
 ---
 
- **Endpage**
+**Endpage**
 
    This page opens up after 10 questions have been answered by the user or when the player runs out of the allocated time.
    It presents the player's total score and a detailed summary of questions answered right and questions answered wrong.
    The end message address the user with the provided username putting forward a congratulatory message on the score and number of questions answered right.
-   This page consist of a home button which takes the user to the start of the game and resets the game to the start point. It also consist of a save score button which saves the player's score if pressed and can be viewed on the highscore page if it meets top 5 scores.
+   This page consist of a home button which takes the user to the start of the game and resets the game to the start point. 
+   
+   It also consist of a save score button which saves the player's score if pressed and can be viewed on the highscore page **if** it meets top 5 scores.
 
 
- <pic>
+ ![End Page](assets/images/siteRepresentation/lscreen_end.webp)
 
 ---
-
-
  
 ## Future Features
 
@@ -278,6 +302,8 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 
 
 * For simplicity and my hope to learn more so that users can improve the game appearance to their desired choice, I have opted to use linear gradient to design the body.
+
+* I have added box shadow to the sections to better present it to users.
 
 
 ### Font
