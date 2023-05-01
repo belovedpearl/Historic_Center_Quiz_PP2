@@ -449,45 +449,34 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
 ### Validator Testing
 
 #### HTML
-* No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/#validate_by_uri)
+* No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbelovedpearl.github.io%2FHistoric_Center_Quiz_PP2%2F)
+
+
+![HTML Validation](assets/images/siteTest/htmlVal.webp)
 
 
 
 #### CSS
 
- * No errors  were found when passed through the official [W3C Validator check](https://validator.w3.org/#validate_by_uri)
+ * No errors  were found when passed through the official [W3C Validator check](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbelovedpearl.github.io%2FHistoric_Center_Quiz_PP2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+
+ ![CSS Validation](assets/images/siteTest/cssVal.webp)
 
 ### JAVASCRIPT
  * 
  
 ### Lighthouse Performance
 
+* Using chrome lighthouse report, the deatails are presented below.
 
-* Home Page
-    * Performance = 93
-    * Accessibility = 97 
+    * Performance = 99
+    * Accessibility = 100 
     * Best Practices = 92
     * SEO = 100
 
-![Home page lighthouse report](assets/presentation/homecheck.webp)
+![Lighthouse Report](assets/images/siteTest/lighthouse.webp)
 
-* Service Page: 
-    * Performance = 96 
-    * Accessibility = 95
-    * Best Practices = 92
-    * SEO = 98
-
-* Contact Page
-    * Performance = 94
-    * Accessibility = 98 
-    * Best Practices = 92
-    * SEO = 99
-
-* Response Page: 
-    * Performance = 93 
-    * Accessibility = 100 
-    * Best Practices = 100
-    * SEO = 98
 
 * I have tested the website across different device like samsung S20, ipads and laptop.
 
