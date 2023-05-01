@@ -521,6 +521,7 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
 * [ReadMe Table Inspiration](https://github.com/belovedpearl/Green_Space-PP1/blob/main/README.md)
 
 * [Code institute's template](https://github.com/Code-Institute-Org/gitpod-full-template)
+* [Favicon Generator](https://favicon.io/favicon-generator/)
 
 * [Learinng more about flex](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/).
 
