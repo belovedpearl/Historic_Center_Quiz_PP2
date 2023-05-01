@@ -395,4 +395,7 @@ body.overlay #mainUI{
     p{
         font-size: 110%;
     }
+    #time{
+        font-size: 120%;
+    }
 }
