@@ -349,6 +349,10 @@ Buttons are used for easy navigation across different section of the application
 
 * Start Game button submits without inputing a username. 
     * Adding an if statement to check if there is a name in the input fixed this.
+* I discover I could use the "Save Score button" multiple times on a game.
+    * Disabling the button after executing its function solved this.
+* I noticed favicon was not displaying.
+    * Properly writing the link by including the absolute path fixed this.
 
 
 ### Unfixed Bugs
@@ -401,13 +405,13 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
   *  [Coolors.co](https://coolors.co/)
   *  [Font Awesome](https://fontawesome.com/)
 
-  * [Fonts](https://fonts.google.com/) 
+  *  [Fonts](https://fonts.google.com/) 
 
-  * [Progress Bar Tutorial](https://youtu.be/kjhsS4INZ9o)
+  *  [Progress Bar Tutorial](https://youtu.be/kjhsS4INZ9o)
 
-  * [CSS Transition](https:youtu.be/EVze4Cq-dZ8)
+  *  [CSS Transition](https:youtu.be/EVze4Cq-dZ8)
 
-  * [Prettier](https://prettier.io/playground/)
+  *  [Prettier](https://prettier.io/playground/)
 
 
 ---
@@ -488,15 +492,13 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
 
 * [ReadMe table presentation](https://github.com/AdamBoley/The-Space-Marine-Legions)
 
-* [ReadMe Table Inspiration](https://github.com/choyoon88/louquiz/edit/main/README.md)
+* [ReadMe Table Inspiration](https://github.com/belovedpearl/Green_Space-PP1/blob/main/README.md)
 
 * [Code institute's template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-* [Main Page Animation Slides](https://youtu.be/FrQR7igd9bs)
-
 * [Learinng more about flex](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/).
 
-*  [W3Schools](https://www.w3schools.com/), [Stack overflow](https://www.slackoverflow.com/) & [Mdn wed docs](https://developer.mozilla.org/en-US/) - Visited several times to correctly learn how to write and style my code.
+*  [W3Schools](https://www.w3schools.com/), [Stack overflow](https://www.slackoverflow.com/) & [Mdn wed docs](https://developer.mozilla.org/en-US/) - Visited several times to learn different syntax used in the code.
 
 
 * Images: 
