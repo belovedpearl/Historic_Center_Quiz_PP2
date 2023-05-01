@@ -341,7 +341,6 @@ body.overlay #mainUI{
     #noScript{
         width: 95%;
         height: 100%;
-        padding: auto;
     }
     h1{
         font-size: 150%;
