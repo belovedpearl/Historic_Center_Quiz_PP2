@@ -389,7 +389,7 @@ function saveHighScore(){
         nameX : name.innerText
     }
 
-    let getScore = JSON.parse(localStorage.getItem("scores")) || "[]";
+    let getScore = JSON.parse(localStorage.getItem("scores")) || [];
     getScore.push(highScore);
     getScore.sort(function(a, b){return b.scoreX - a.scoreX});
     getScore.splice(5);
