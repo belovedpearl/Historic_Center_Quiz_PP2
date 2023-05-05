@@ -394,6 +394,13 @@ function saveHighScore(){
     getScore.sort(function(a, b){return b.scoreX - a.scoreX});
     getScore.splice(5);
     localStorage.setItem("scores", JSON.stringify(getScore));
+
     // Prevent multiple use of save button on a game
-    document.getElementById("save").disabled = true
+    document.getElementById("save").disabled = true;
+     
+    // Display a message to inform the user that the score is saved
+    const endDiv = document.getElementById("endDiv");
+    let pElement = document.createElement("p");
+    pElement.innerText = "Your score is saved"
+    endDiv.appendChild(pElement);
 }
