@@ -50,6 +50,7 @@ p{
 
 input{
     border-radius: 15px;
+    cursor: pointer;
     font-size: 150%;
     font-weight: 700;
     height: 40px;
@@ -66,10 +67,12 @@ img{
 a{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 /*___ Style button on each page and its behavior when pressed ___*/
 .btn{
     border-radius: 15px;
+    cursor: pointer;
     font-size: 120%;
     font-weight: 900;
     height: 35px;
@@ -217,6 +220,7 @@ body.overlay #mainUI{
 
 .option{
     border-radius: 15px;
+    cursor: pointer;
     display: block;
     font-size: 105%;
     font-weight: 700;

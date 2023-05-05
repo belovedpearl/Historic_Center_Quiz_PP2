@@ -75,7 +75,7 @@ let questions = [
         answer: "Petra Jordan"
     },
     {
-        question: "assets/images/quizImages/pyramid-of-kukulkan",
+        question: "assets/images/quizImages/pyramid-of-kukulkan.webp",
         options: ["Pyramid of Tiza Mexico", "Pyramid of Kukulkan", "Pyramid of Giza", "Pyramid of Cholula Mexico"],
         answer: "Pyramid of Kukulkan"
     },
@@ -398,7 +398,7 @@ function saveHighScore() {
 
     // Prevent multiple use of save button on a game
     document.getElementById("save").disabled = true;
-
+    
     // Display a message to inform the user that the score is saved
     const endDiv = document.getElementById("endDiv");
     let pElement = document.createElement("p");
