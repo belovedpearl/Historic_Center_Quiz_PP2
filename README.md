@@ -466,10 +466,15 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
  ![CSS Validation](assets/images/siteTest/cssVal.webp)
 
 ### JAVASCRIPT
- * 
- 
-### Lighthouse Performance
+ * I have passed the code through [JSHint](https://jshint.com/)
 
+
+ ![JSHint Checker](assets/images/siteTest/jshint.webp)
+
+ 
+ 
+
+### Lighthouse Performance
 * Using chrome lighthouse report, the deatails are presented below.
 
     * Performance = 99
@@ -505,7 +510,6 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
 
 ## Credits
 
-* ReadMe layout inspiration from other Code Institute students from #peer-code-review forum and https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#development
 
 * [ReadMe table presentation](https://github.com/AdamBoley/The-Space-Marine-Legions)
 
@@ -538,5 +542,7 @@ Images used are from [Pexels](https://pexels.com)
 * Much love to my **Children** for understanding and encouraging me through this project buildup
 
 * A big thank you to my Mentor, **Sandeep Aggarwal**  for the support and through enlightment he provided during the buildup of this project.
+
+* ReadMe layout inspiration from other Code Institute students from #peer-code-review forum and https://github.com/kera-cudmore/readme-examples/blob/main/milestone1-readme.md#development
 
 * Thank you to everyone at **Code Institute** for helping us learn.
