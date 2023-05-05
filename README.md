@@ -286,6 +286,8 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 
  * I will audio to improve user experience of the game.
 
+ * Add an autosave feature.
+
  * Features that allow users to choose some custom settings to personalize the game.
 
  * .Randomize the position of each option.
@@ -433,11 +435,11 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
 
   *  [Fonts](https://fonts.google.com/) 
 
-  *  [Progress Bar Tutorial](https://youtu.be/kjhsS4INZ9o)
-
   *  [CSS Transition](https:youtu.be/EVze4Cq-dZ8)
 
   *  [Prettier](https://prettier.io/playground/)
+
+  * [Favicon Generator](https://favicon.io/favicon-generator/)
 
 
 ---
@@ -510,7 +512,10 @@ The live link can be found [here](https://belovedpearl.github.io/Historic_Center
 * [ReadMe Table Inspiration](https://github.com/belovedpearl/Green_Space-PP1/blob/main/README.md)
 
 * [Code institute's template](https://github.com/Code-Institute-Org/gitpod-full-template)
-* [Favicon Generator](https://favicon.io/favicon-generator/)
+
+* [CSS Transition](https:youtu.be/EVze4Cq-dZ8)
+
+* [Progress Bar Tutorial](https://youtu.be/kjhsS4INZ9o)
 
 * [Learinng more about flex](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/).
 
