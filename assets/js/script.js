@@ -102,9 +102,9 @@ let currentQuestion = null;
 let questionCounter = 0;
 
 
-// DOMContent loaded allows the document to be loaded before adding event listeners to all the required areas
+// DOMContent loads before adding event listeners to all the required areas
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
     
     // To access the game instruction, hide the firstpage and show the second one
     let instruct = document.getElementById("instruct");
@@ -126,14 +126,14 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // To go back to the firstpage
     let back = document.getElementById("backFromInstruct");
-    back.addEventListener("click", function(){
+    back.addEventListener("click", function() {
     document.getElementById("firstPage").classList.remove("hide"); 
     document.getElementById("howTo").classList.add("hide"); 
     });
 
     // To submit name value to access the game
     let submit = document.getElementById("submit");
-    submit.addEventListener("click", function(){
+    submit.addEventListener("click", function() {
     let name = document.getElementById("nameValue").value;
     if (name){
         document.getElementById("nameArea").classList.add("hide");
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     // To access the main game area
     let startGame = document.getElementById("gameStart");
-    startGame.addEventListener("click", function(){
+    startGame.addEventListener("click", function() {
     let gameStartArea = document.getElementById("game");
     gameStartArea.classList.remove("hide");
     let welcomePage = document.getElementById("welcome");
@@ -185,9 +185,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // call functions to continue running the game
     runGame();
     countdown();
-    });
-    
-    
+    });  
 });
 
 
@@ -243,7 +241,7 @@ function countdown(){
     setInterval(()=>{
     let time = document.getElementById("time");
     time.innerText = counter--;
-    if(counter === 0){
+    if(counter === 0) {
         time.innerText = "Time Up!!!";
         stopGame();
     }
@@ -257,7 +255,7 @@ function countdown(){
 /**
 * Disable further clicks on answer buttons 
 */
-function disableClick(){
+function disableClick() {
     let options = document.getElementsByClassName("option");
     
     for (let option of options){
@@ -269,7 +267,7 @@ function disableClick(){
 /**
 * Get current score from the DOM and increase it by 1
 */
-function increaseScore(){
+function increaseScore() {
     let score = document.getElementById("points").innerText;
     document.getElementById('points').innerText = ++score;
 }
@@ -278,7 +276,7 @@ function increaseScore(){
 /**
 * Get current count from the DOM and increase it by 1
 */
- function increaseWrong(){
+ function increaseWrong() {
     let wrong = document.getElementById("wrong").innerText;
     document.getElementById('wrong').innerText = ++wrong;
 }
@@ -289,7 +287,7 @@ function increaseScore(){
 * Brings up the endPage section
 * Set the score and right answer in the string
 */
-function stopGame(){
+function stopGame() {
     setTimeout(function (){
         let restart = document.getElementById("restart");
         restart.focus();
@@ -311,7 +309,7 @@ function stopGame(){
 /**
 * Resets the state of the question box
 */
-function resetOptions(){
+function resetOptions() {
     let options = document.getElementsByClassName("option");
     for (let option of options){
         option.disabled = false;
@@ -324,7 +322,7 @@ function resetOptions(){
 /**
 * Regulate progress bar increase as more right answer are provided
 */
-function progressBar(){
+function progressBar() {
     let score = document.getElementById("points").innerText;
     
     let progressBar = document.querySelector(".progress-inner");
@@ -335,7 +333,7 @@ function progressBar(){
 /*
 * Takes the game back to the beginning for use by another user
 */
-function startOver(){
+function startOver() {
     document.body.classList.remove("overlay");
     questionCounter = 0;
     let score = document.getElementById("points").innerText;
@@ -351,7 +349,7 @@ function startOver(){
 * Gets the saved score from the local storage
 * List the saved scores
 */
-function viewSavedScore(){
+function viewSavedScore() {
     document.getElementById("firstPage").classList.add("hide"); 
     document.getElementById("highScore").classList.remove("hide");
 
@@ -370,17 +368,18 @@ function viewSavedScore(){
 /**
 * Return the page back to the home page
 */
-function highBackHome(){
+function highBackHome() {
     document.getElementById("firstPage").classList.remove("hide");
     document.getElementById("highScore").classList.add("hide");
 }
+
 
 /**
 * Save score
 * Resolve player name and score into an object
 * Sets and save to the local storage
 */
-function saveHighScore(){
+function saveHighScore() {
     let score = document.getElementById("totalScore");
     let name = document.getElementById("playerName");
 
