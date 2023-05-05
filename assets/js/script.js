@@ -111,14 +111,14 @@ document.addEventListener("DOMContentLoaded", function(){
     instruct.addEventListener("click", function(){
     document.getElementById("firstPage").classList.add("hide"); 
     document.getElementById("howTo").classList.remove("hide");
-    })
+    });
 
     // To access the name area, hide the current page and show the next one
     let nameArea = document.getElementById("enterName");
     nameArea.addEventListener("click", function(){
     document.getElementById("firstPage").classList.add("hide"); 
     document.getElementById("nameArea").classList.remove("hide"); 
-    })
+    });
 
     // To open up the score page
     let viewScore = document.getElementById("viewScore");
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(){
     back.addEventListener("click", function(){
     document.getElementById("firstPage").classList.remove("hide"); 
     document.getElementById("howTo").classList.add("hide"); 
-    })
+    });
 
     // To submit name value to access the game
     let submit = document.getElementById("submit");
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function(){
         welcomePage.classList.remove("hide");
         welcome(name);
     } 
-    })
+    });
     
     // To access the main game area
     let startGame = document.getElementById("gameStart");
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function(){
             } 
         disableClick();
         setTimeout(runGame, 1000);
-        })
+        });
     }
 
     // To return back to the start game listen for
@@ -185,10 +185,10 @@ document.addEventListener("DOMContentLoaded", function(){
     // call functions to continue running the game
     runGame();
     countdown();
-    })
+    });
     
     
-})
+});
 
 
 /**
@@ -244,7 +244,7 @@ function countdown(){
     let time = document.getElementById("time");
     time.innerText = counter--;
     if(counter === 0){
-        time.innerText = "Time Up!!!"
+        time.innerText = "Time Up!!!";
         stopGame();
     }
     }, 1000);
@@ -293,7 +293,7 @@ function stopGame(){
     setTimeout(function (){
         let restart = document.getElementById("restart");
         restart.focus();
-    }, 360)
+    }, 360);
 
     document.body.classList.add("overlay");
     let score = document.getElementById("points").innerText;
@@ -362,7 +362,7 @@ function viewSavedScore(){
     highContainer.innerHTML = highScorePage.map(scores => {
     return `
         <li class="high-score"> ${scores.nameX} - ${scores.scoreX}</li>
-          `
+          `;
     }).join('');
 }
 
@@ -387,7 +387,7 @@ function saveHighScore(){
     let highScore = {
         scoreX : score.innerText,
         nameX : name.innerText
-    }
+    };
 
     let getScore = JSON.parse(localStorage.getItem("scores")) || [];
     getScore.push(highScore);
@@ -401,6 +401,6 @@ function saveHighScore(){
     // Display a message to inform the user that the score is saved
     const endDiv = document.getElementById("endDiv");
     let pElement = document.createElement("p");
-    pElement.innerText = "Your score is saved"
+    pElement.innerText = "Your score is saved";
     endDiv.appendChild(pElement);
 }
