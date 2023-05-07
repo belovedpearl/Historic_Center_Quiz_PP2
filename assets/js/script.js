@@ -163,9 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Check the options buttons with their class name for a click
-// Add the class correct, increase score and add to the progress bar if selected one is correct
-// Add the class wrong, increase wrong if selected one is wrong
-// Disable the button after the first click
+// Listen for click and call on the option click function
 let options = document.getElementsByClassName("option");
 for (let option of options) {
 option.addEventListener("click", onOptionClick);
@@ -181,8 +179,8 @@ save.addEventListener("click", saveHighScore);
 });
 
 /**
- * Assigns correct and wrong class
- * Disbles the button
+ * Add the class correct, increase score and add to the progress bar if selected one is correct
+ * Disble the button after the first click
  * Continue the game after one second
  */ 
 function onOptionClick(e) {
@@ -219,7 +217,7 @@ function runGame() {
     resetOptions();
     let questionNumber = document.getElementById("questionNum");
     questionNumber.innerText = questionCounter++;
-
+    // check if max-question is not exceeded
     if (questionCounter > MAX_QUESTIONS) {
         stopGame();
     } else {
@@ -299,8 +297,9 @@ function stopGame() {
         let restart = document.getElementById("restart");
         restart.focus();
     }, 360);
-
+    // Make the body less visible
     document.body.classList.add("overlay");
+    // Get the score and name
     let score = document.getElementById("points").innerText;
     let name = document.getElementById("nameValue").value;
 
@@ -329,8 +328,8 @@ function resetOptions() {
 */
 function progressBar() {
     let score = document.getElementById("points").innerText;
-
     let progressBar = document.querySelector(".progress-inner");
+    // Update the progress bar
     progressBar.style.transform = `scaleX(${score / 10})`;
 }
 
@@ -357,10 +356,10 @@ function viewSavedScore() {
     document.getElementById("firstPage").classList.add("hide");
     document.getElementById("highScore").classList.remove("hide");
 
-    // Gets saved item from the local storage andputs it on the highscore page
+    // Gets saved item from the local storage and puts it on the highscore page
     let highScorePage = JSON.parse(localStorage.getItem("scores") || "[]");
     let highContainer = document.getElementById("highScoreContainer");
-
+    // Display each score content onto a list
     highContainer.innerHTML = highScorePage.map(scores => {
         return `
         <li class="high-score"> ${scores.nameX} - ${scores.scoreX}</li>

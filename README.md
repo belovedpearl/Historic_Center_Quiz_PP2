@@ -57,6 +57,7 @@
      * [Validator Testing](#validator-testing)
          * [HTML](#html)
          * [CSS](#css)
+         * [JAVASCRIPT](#javascript)
      * [Lighthouse Performance](#lighthouse-performance)
      * [Functional Testing](#functional-testing)
 * [Credit](#credits)
@@ -83,7 +84,7 @@
 
 ---
 
- Historic center quiz features different historic centers around the world, it features about 20 differnt locations centers around the world and test ability of its users to identify each. It also exposes the mind to all these places of interest. 
+ Historic center quiz features different historic centers around the world, it features about 20 different locations centers around the world and test ability of its users to identify each. It also exposes the mind to all these places of interest. 
  Each question is displayed in form of a picture with 4 options to choose from. To get the right answer, you need to click on the correct option. The quiz diables the buttons to prevent multiple entry and brings up the next question after the first click.
 
  Get to know more about the world playing this quiz.
@@ -191,17 +192,18 @@ The main page is displayed once the websites is open
 It is made up of the heading "Historic center quiz" telling the user what the page is about. Right under it are two buttons described below.
 
  ***Instruction Button*** : This opens up the instruction panel which tells the player more on what to expect in the game.It has a button to return to the main page in order to start the game.
-     Rules for The Quiz
-     *  This page opens up once the user clicks on the instruction button.
-     *  It consist of information about the game every user must know.
-     *  After reading through the instruction, the user is to press the button "Home" which takes the user back to the main page to continue to the game.
 
-  ***Play Game Button***: This prompts the users to enter his name which is used in referencing the player at the end of the game. 
+Rules for The Quiz
+*  This page opens up once the user clicks on the instruction button.
+*  It consist of information about the game every user must know.
+*  After reading through the instruction, the user is to press the button "Home" which takes the user back to the main page to continue to the game.
 
-  ***High Score Button***: This button allow users to view previously saved high scores. It keeps a record of 5 high scores that have been recorded. 
+***Play Game Button***: This prompts the users to enter his name which is used in referencing the player at the end of the game. 
+
+***High Score Button***: This button allow users to view previously saved high scores. It keeps a record of 5 high scores that have been recorded. 
 
 
-  ![Home Page](assets/images/siteRepresentation/homepage.webp)
+![Home Page](assets/images/siteRepresentation/homepage.webp)
 
 ---
 
@@ -226,10 +228,10 @@ It is made up of the heading "Historic center quiz" telling the user what the pa
 
 ### Player Name Entry Page
 
-   * This page opens up when the user clicks on the enter name button
+   * This page opens up when the user clicks on the **PLAY GAME** button
    * The player **MUST** enter a username to access the quiz.
    * This page takes in the player name to the game.
-   * It consist of a startgame button which gives the player access to the game.
+   * It consist of a **SUBMIT** button which registers the username and opens up the next page.
 
      
 
@@ -248,7 +250,7 @@ This page welcomes the user  with the **Username** provided and also challenges 
 
 **Game Page**
 
-This page displays the quiz body for user to interract with after the user starts the game, it keeps a record of right question answered, wrong question chosen and it also features a progress bar to inform the user about how many right answer hes has chosen.
+This page displays the quiz body for users to interract with after starting the game, it keeps a record of right question answered, wrong question chosen and it also features a progress bar a visual representation of how well the user is doing with the quiz.
 
 The page consist of the following:
 * A section that contains the image of the historic center.
@@ -273,10 +275,10 @@ Each right answer attracts 10 points, the total is presented to the user at the 
    The end message address the user with the provided username putting forward a congratulatory message on the score and number of questions answered right.
    This page consist of a home button which takes the user to the start of the game and resets the game to the start point. 
    
-   It also consist of a save score button which saves the player's score if pressed and can be viewed on the highscore page **if** it meets top 5 scores.
+   It also consist of a **Save Score** button which saves the player's score if pressed and can be viewed on the highscore page **if** it meets top 5 scores. Save score is designed to take one click per game to prevent repeating scores saved.
 
 
- ![End Page](assets/images/siteRepresentation/lscreen_end.webp)
+![End Page](assets/images/siteRepresentation/lscreen_end.webp)
 
 ---
  
@@ -284,13 +286,13 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 
 ---
 
- * I will audio to improve user experience of the game.
+ * I will add audio to improve user experience of the game.
 
  * Add an autosave feature.
 
  * Features that allow users to choose some custom settings to personalize the game.
 
- * .Randomize the position of each option.
+ * Randomize the position of each option.
 
  * Add a reward section where users can choose a gift based on the scores they get.
 
@@ -319,10 +321,10 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 ### Colour Scheme
 
    
-   I have selected a mix of blue shades **(rgb(32,201, 255) 36.7%)**, **(rgb(52, 79, 88) 84.4%)**, **black** and **White** to complement site appearance.
-   Using [color contrast checker](https://dequeuniversity.com/) have checked the contrast of both colors use as foreground and background. Contrast result gave the following
+I have selected a mix of blue shades **(rgb(32,201, 255) 36.7%)**, **(rgb(52, 79, 88) 84.4%)**, **black** and **White** to complement site appearance.
+Using [color contrast checker](https://dequeuniversity.com/) have checked the contrast of both colors use as foreground and background. Contrast result gave the following.
 
-  I have maintained a button text color change to white on hovering to alert the user of the mouse presence on each button
+I have maintained a button text color change to white on hovering to alert the user of the mouse presence on each button.
 
 --- 
 
@@ -331,6 +333,7 @@ Each right answer attracts 10 points, the total is presented to the user at the 
 ---
 
 Logo opens up to the opening page.
+
 Buttons are used for easy navigation across different section of the application. 
 
 
